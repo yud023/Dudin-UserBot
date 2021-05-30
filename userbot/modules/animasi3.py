@@ -981,11 +981,11 @@ async def slap(replied_user, event):
     return caption
 
 
-@register(outgoing=True, pattern=r"^\.boobs(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.rama(?: |$)(.*)")
 async def boobs(e):
     await e.edit("`Berdosa, Mendapatkan Gambar Boobs...`")
     await sleep(3)
-    await e.edit("`Mengirim Gambar Boobs...`")
+    await e.edit("`hanya bokep dipikiran ku...`")
     nsfw = requests.get(
         'http://api.oboobs.ru/noise/1').json()[0]["Gambar Boobs"]
     urllib.request.urlretrieve(
@@ -996,11 +996,11 @@ async def boobs(e):
     await e.delete()
 
 
-@register(outgoing=True, pattern=r"^\.pantat(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.adel(?: |$)(.*)")
 async def butts(e):
     await e.edit("`Berdosa, Mendapatkan Gambar Pantat Yang Indah...`")
     await sleep(3)
-    await e.edit("`Mengirim Gambar Pantat Indah...`")
+    await e.edit("`Gjm, Gak Jangan Maksa...`")
     nsfw = requests.get(
         'http://api.obutts.ru/noise/1').json()[0]["Gambar Pantat"]
     urllib.request.urlretrieve(
@@ -1026,7 +1026,7 @@ async def decide(event):
                                     file=r["image"])
 
 
-@register(outgoing=True, pattern=r"^\.fp$")
+@register(outgoing=True, pattern=r"^\.jia$")
 async def facepalm(e):
     """ Facepalm  🤦‍♂ """
     await e.edit("🤦‍♂")
@@ -1326,7 +1326,7 @@ async def love(event):
         return
 
 
-@register(outgoing=True, pattern="^.earth$")
+@register(outgoing=True, pattern="^.bumi$")
 async def earth(event):
     deq = deque(list("🌏🌍🌎🌎🌍🌏🌍🌎"))
     try:
@@ -1340,7 +1340,7 @@ async def earth(event):
 
 @register(outgoing=True, pattern="^.hati$")
 async def earth(event):
-    deq = deque(list("🖤💜💙💚💛🧡❤️🤍"))
+    deq = deque(list("🖤"))
     try:
         for x in range(32):
             await sleep(0.1)
@@ -1350,7 +1350,7 @@ async def earth(event):
         return
 
 
-@register(outgoing=True, pattern="^.monyet$")
+@register(outgoing=True, pattern="^.kepin$")
 async def earth(event):
     deq = deque(list("🙈🙉🙈🙉🙈🙉🙈🙉"))
     try:
@@ -1630,7 +1630,7 @@ async def gtfo(e):
         await e.edit("`\n█████████`"
                      "`\n█▄█████▄█`"
                      "`\n█▼▼▼▼▼`"
-                     "`\n█       STFU FAGGOT'S`"
+                     "`\n█       Geez Userbot`"
                      "`\n█▲▲▲▲▲`"
                      "`\n█████████`"
                      "`\n ██   ██`")
@@ -1749,7 +1749,7 @@ async def koc(e):
         await e.edit("8✊===D💦💦💦💦💦💦💦💦")
         await e.edit("8===✊D💦💦💦💦💦💦💦💦💦")
         await e.edit("8==✊=D💦💦💦💦💦💦💦💦💦💦")
-        await e.edit("8=✊==D Lah Kok Habis?")
+        await e.edit("8=✊==D Arrghh")
         await e.edit("😭😭😭😭")
 
 
@@ -1870,7 +1870,7 @@ CMD_HELP.update({
     "\nUsage: Buat keputusan cepat."
     "\n\n> `.nou` `.bot` `.rock` `.gey` `.tf` `.paw` `.tai` `.nih`"
     "\n> `.fag` `.gtfo`; `.stfu` `.lol` `.lool` `.fail` `.leave`"
-    "\n> `.iwi` `.sayhi` `.koc` `.gas` `.earth` `.love` `.rain`"
-    "\n> `.penis` `.emo` `.fuck` `.skull`  `.monyet`\nUsage: Cobain aja"
+    "\n> `.iwi` `.sayhi` `.koc` `.gas` `.bumi` `.love` `.rain`"
+    "\n> `.penis` `.emo` `.fuck` `.skull`  `.kepin`\nUsage: Cobain aja"
     "\n\n\n**Semoga Harimu Menyenangkan**\n➥ `Axel`"
 })
