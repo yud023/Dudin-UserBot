@@ -1649,4 +1649,4 @@ CMD_HELP.update(
         "\n.nou | .bot | .gey | .gay | .tf | .paw | .taco | .nih | .ii ;"
         "\n.fag | .gtfo | .stfu | .lol | .lool | .fail | .leave"
         "\n.love | .rain | .earth | .fuck | .penis | .koc | .anjay"
-        "\n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."})
+        "\n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@adudinnadabot) for some of these."})
