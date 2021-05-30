@@ -11,7 +11,7 @@ async def _(event):
     if not (reply and (reply.media)):
         await event.edit("`Mohon Balas Ke Sticker`")
         return
-    xx = await event.edit("`Memproses Tiny....`")
+    xx = await event.edit("`Memproses....`")
     ik = await bot.download_media(reply)
     im1 = Image.open("geez/geez.png")
     if ik.endswith(".tgs"):
