@@ -464,7 +464,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "⚡𝗚𝗲𝗲𝘇",
-                                "https://github.com/Dudin-UserBot"),
+                                "https://github.com/adudon01/Dudin-UserBot"),
                             custom.Button.url(
                                 "✨𝗢𝘄𝗻𝗲𝗿",
                                 "t.me/Adudin21")]],
