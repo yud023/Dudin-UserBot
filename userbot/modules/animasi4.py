@@ -34,7 +34,7 @@ async def koc(e):
         await e.edit("SAYANG KAMU💞")
 
 
-@register(outgoing=True, pattern='^.dino(?: |$)(.*)')
+@register(outgoing=True, pattern='^.din(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`DIN DINNN.....`")
