@@ -39,7 +39,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`DIN DINNN.....`")
     sleep(1)
-    await typew.edit("`DINOOOOSAURUSSSSS!!`")
+    await typew.edit("`Adudinnnnn....!!`")
     sleep(1)
     await typew.edit("`🏃                        🦖`")
     await typew.edit("`🏃                       🦖`")
@@ -349,7 +349,7 @@ async def koc(e):
         await e.edit("`GABUT`")
 
 
-@register(outgoing=True, pattern='^.sangean(?: |$)(.*)')
+@register(outgoing=True, pattern='^.ganteng(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Kalo Sange Modal`")
@@ -409,7 +409,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@register(outgoing=True, pattern='^.yatim(?: |$)(.*)')
+@register(outgoing=True, pattern='^.beban(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -438,12 +438,12 @@ CMD_HELP.update({
     "animasi4":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gabut` atau `.dino`\
     \n↳ : Dikala gabut, yaaa pake aja xixixi.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yatim`\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.beban`\
     \n↳ : Buat bercandaan, kalo gasuka jangan dipake.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cinta`\
     \n↳ : Mengirim cinta tai anjiing ke seseorang.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sayang`\
     \n↳ : Berubah menjadi kadal.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sangean`\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ganteng`\
     \n↳ : Kasih aja buat orang yang sangean."
 })
