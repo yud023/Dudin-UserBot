@@ -1872,5 +1872,5 @@ CMD_HELP.update({
     "\n> `.fag` `.gtfo`; `.stfu` `.lol` `.lool` `.fail` `.leave`"
     "\n> `.iwi` `.sayhi` `.koc` `.gas` `.bumi` `.love` `.rain`"
     "\n> `.penis` `.emo` `.fuck` `.skull`  `.kepin`\nUsage: Cobain aja"
-    "\n\n\n**Semoga Harimu Menyenangkan**\n➥ `Axel`"
+    "\n\n\n**Semoga Harimu Menyenangkan**\n➥ `@Adudin21`"
 })
