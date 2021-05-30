@@ -11,7 +11,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("`Kedua Gua Cakep`")
     sleep(1)
-    await typew.edit("`Dan Maaf Ada Hati Yang Harus Dijaga.`")
+    await typew.edit("`''Dan Maaf Ada Hati Yang Harus Dijaga.❤''`")
 
 # Create by myself @localheart
 
