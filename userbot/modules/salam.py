@@ -14,7 +14,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**Hallo Semua Saya {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("`Assalamualaikum.....`")
+    await typew.edit("`Assalamu'alaikum wr. wb.`")
 # Owner @Si_Dian
 # Thanks XBOT-REMIX
 
@@ -24,7 +24,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**Hallo Semua Saya {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("`Assalamualaikum.....`")
+    await typew.edit("`Assalamu'alaikum wr. wb.`")
 # Owner @Si_Dian
 # Izin Maling Om
 
@@ -34,7 +34,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**{DEFAULTUSER} mengucapkan**")
     sleep(1)
-    await typew.edit("`Waallaikumsalam......`")
+    await typew.edit("`Wa'alaikumssalam wr. wb.`")
 # Owner @Si_Dian
 # Izin Maling Om
 
@@ -44,7 +44,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**{DEFAULTUSER} mengucapkan**")
     sleep(1)
-    await typew.edit("`Waallaikumsalam......`")
+    await typew.edit("`Wa'alaikumssalam wr. wb.`")
 # Owner @Si_Dian
 # Izin Maling Om
 # Hehehehe
