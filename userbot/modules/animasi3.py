@@ -1055,7 +1055,7 @@ async def copypasta(cp_e):
     elif textx:
         message = textx.text
     else:
-        return await cp_e.edit("`😂🅱️AhHH👐MaNtAp👅Bro👅UnTuk✌️MeMbuAT👌Ku👐TeRliHat👀LuCu💞HaHAhaA!💦`")
+        return await cp_e.edit("`😂 Aku VN🅱️Tapi👐Nanti👅Suaraku👅Terbayang✌️Bayang👌dan AKu👐Terlihat👀LuCu💞hahahah!💦`")
 
     reply_text = choice(EMOJIS)
     # choose a random character in the message to be substituted with 🅱️
