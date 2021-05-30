@@ -1044,7 +1044,7 @@ async def insult(e):
     await e.edit(choice(INSULT_STRINGS))
 
 
-@register(outgoing=True, pattern=r"^\.cp(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.putri(?: |$)(.*)")
 async def copypasta(cp_e):
     """ Copypasta the famous meme """
     textx = await cp_e.get_reply_message()
@@ -1814,7 +1814,7 @@ CMD_HELP.update({
     "animasi3":
     ">`.cowsay`"
     "\nUsage: sapi yang mengatakan sesuatu."
-    "\n\n> .cp"
+    "\n\n> .putri"
     "\nUsage: Copy paste meme terkenal"
     "\n\n>`.vapor`"
     "\nUsage: Menguapkan semuanya!"
