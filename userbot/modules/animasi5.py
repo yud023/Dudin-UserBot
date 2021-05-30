@@ -44,7 +44,8 @@ async def _(event):
             "Roif",
             "🌒",
             "Ramasu",
-            "Ceca"]
+            "Ceca"
+            "Gjm, Gak Jangan Maksa... :)"]
 
         for i in animation_ttl:
 
