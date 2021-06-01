@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @VckyouuBitch di telegram",
+      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @Adudin21 di telegram",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -211,7 +211,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
-      "value": "Tangerang",
+      "value": "Bandung",
       "required": false
     },
     "WOLFRAM_ID": {
