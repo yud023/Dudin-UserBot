@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ Geez-UserBot ]
+    branches: [ Dudin-UserBot ]
   pull_request:
-    branches: [ Geez-UserBot ]
+    branches: [ Dudin-UserBot ]
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-[![Python package](https://github.com/adudon01/Dudin-UserBot/actions/workflows/python-package.yml/badge.svg?branch=Geez-UserBot&event=workflow_dispatch)](https://github.com/adudon01/Dudin-UserBot/actions/workflows/python-package.yml)
+[![Python package](https://github.com/adudon01/Dudin-UserBot/actions/workflows/python-package.yml/badge.svg?branch=Dudin-UserBot&event=workflow_dispatch)](https://github.com/adudon01/Dudin-UserBot/actions/workflows/python-package.yml)
