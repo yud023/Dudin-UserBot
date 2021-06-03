@@ -1,24 +1,24 @@
-<p align="center"> 🚀 𝗪𝗵𝗶𝗰𝗵 𝗶𝘀 𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 𝗕𝗮𝘀𝗲𝗱 🚀</p>
+<p align="center"> 🚀 WEAK 87 REBELLIONS 🚀</p>
 <p align="left">
-  <a href="https://github.com/adudon01/Dudin-UserBot/fork"><img src="https://img.shields.io/github/forks/vckyou/Geez-UserBot?label=Fork&style=social"></a>
+  <a href="https://github.com/yud023/REBELLIONS-UserBot/fork"><img src="https://img.shields.io/github/forks/yud023/REBELLIONS-UserBot?label=Fork&style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/adudon01/Dudin-UserBot"><img src="https://img.shields.io/github/stars/vckyou/Geez-UserBot?style=social"></a>
+  <a href="https://github.com/yud023/REBELLIONS-UserBot"><img src="https://img.shields.io/github/stars/yud023/REBELLIONS-UserBot?style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/adudon01/Dudin-UserBot/blob/Geez-UserBot/LICENSE"><img src="https://img.shields.io/github/license/adudon01/Dudin-UserBot?&style=social&logo=github">
+  <a href="https://github.com/yud023/REBELLIONS-UserBot/blob/yud023-UserBot/LICENSE"><img src="https://img.shields.io/github/license/yud023/REBELLIONS-UserBot?&style=social&logo=github">
   </a></p>
 
 ![VIEWS](https://komarev.com/ghpvc/?username=vckyou)
-![Repo Size](https://img.shields.io/github/repo-size/vckyou/Geez-UserBot?&style=plastic&logo=github)
-[![GitHub issues](https://img.shields.io/github/issues/vckyou/Geez-UserBot?&style=plastic&logo=github)](https://github.com/vckyou/Geez-UserBot/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/vckyou/Geez-UserBot?&style=plastic&logo=github)](https://github.com/adudon01/Dudin-UserBot/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/vckyou/Geez-UserBot?&style=plastic&logo=github)](https://GitHub.com/vckyou/Geez-UserBot/graphs/contributors/)
-[![PR Open](https://img.shields.io/github/issues-pr/vckyou/Geez-UserBot?&style=plastic&logo=github)](https://github.com/adudon01/Dudin-UserBot/pulls)
-[![PR Closed](https://img.shields.io/github/issues-pr-closed/adudon01/Dudin-UserBot?&style=plastic&logo=github)](https://github.com/adudon01/Dudin-UserBot/pulls?q=is:closed)
+![Repo Size](https://img.shields.io/github/repo-size/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)
+[![GitHub issues](https://img.shields.io/github/issues/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://GitHub.com/yud023/REBELLIONS-UserBot/graphs/contributors/)
+[![PR Open](https://img.shields.io/github/issues-pr/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/pulls)
+[![PR Closed](https://img.shields.io/github/issues-pr-closed/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/pulls?q=is:closed)
 <p align="justify">
-<a href="https://github.com/adudon01/Dudin-UserBot/commits/Geez-UserBot"><img src="https://img.shields.io/github/last-commit/adudon01/Dudin-UserBot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
-<a href="https://github.com/adudon01/Dudin-UserBot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/adudon01/Dudin-UserBot/CI/Geez-UserBot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
+<a href="https://github.com/yud023/REBELLIONS-UserBot/commits/REBELLIONS-UserBot"><img src="https://img.shields.io/github/last-commit/yud023/REBELLIONS-UserBot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
+<a href="https://github.com/yud023/REBELLIONS-UserBot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/yud023/REBELLIONS-UserBot/CI/REBELLIONS-UserBot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
 </p>
 <p align="justify">
 <a href="https://pypi.org/project/Telethon/"><img src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=brightgreen&style=for-the-badge" /></a>
@@ -26,11 +26,11 @@
 </p>
 <p align="left">
 </p>
-<a href="https://t.me/GeezSupportGroup"><img src="https://img.shields.io/badge/Join-Group1%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/VcgSupportGroup"><img src="https://img.shields.io/badge/Join-Group2%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/merapatsabi"><img src="https://img.shields.io/badge/Join-Group1%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/sokinlurr"><img src="https://img.shields.io/badge/Join-Group2%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
-## ⚡Geez-UserBot
-![Dudin UserBot](https://telegra.ph/file/9464f116132df37c649c8.png)
+## ⚡REBELLIONS-UserBot⚡
+![REBELLIONS-UserBot](https://telegra.ph/file/b48876a98e0d972d4ae0f.jpg)
 
 <h3 align="center">Userbot Used for Fun on Telegram, and for Maintianing Your Group.</h3>
 <p align="center">&nbsp;</p>
@@ -44,7 +44,7 @@
 
 ## <p align="center">DEPLOY TO HEROKU</p>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/adudon01/Dudin-UserBot/tree/Geez-UserBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-gray?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/yud023/REBELLIONS-UserBot/tree/REBELLIONS-UserBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-gray?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 <br>
 </p>
