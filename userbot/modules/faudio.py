@@ -1,4 +1,4 @@
-@ultroid_cmd(pattern="faudio ?(.*)")
+@register(outgoing=True, pattern="^.faudio(?: |$)(.*)")
 async def _(e):
     t = e.pattern_match.group(1)
     if not (t or t.isdigit()):
