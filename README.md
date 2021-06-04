@@ -9,7 +9,7 @@
   <a href="https://github.com/yud023/REBELLIONS-UserBot/blob/yud023-UserBot/LICENSE"><img src="https://img.shields.io/github/license/yud023/REBELLIONS-UserBot?&style=social&logo=github">
   </a></p>
 
-![VIEWS](https://komarev.com/ghpvc/?username=vckyou)
+![VIEWS](https://komarev.com/ghpvc/?username=yud023)
 ![Repo Size](https://img.shields.io/github/repo-size/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)
 [![GitHub issues](https://img.shields.io/github/issues/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/graphs/commit-activity)
