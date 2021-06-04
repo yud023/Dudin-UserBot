@@ -18,6 +18,7 @@ async def typewriter(typew):
 # Owner @Si_Dian
 # Thanks XBOT-REMIX
 
+
 @register(outgoing=True, pattern='^p(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -28,6 +29,7 @@ async def typewriter(typew):
 # Owner @Si_Dian
 # Izin Maling Om
 
+
 @register(outgoing=True, pattern='^L(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -37,6 +39,7 @@ async def typewriter(typew):
     await typew.edit("`Wa'alaikumssalam YATIM PIATU`")
 # Owner @Si_Dian
 # Izin Maling Om
+
 
 @register(outgoing=True, pattern='^l(?: |$)(.*)')
 async def typewriter(typew):
