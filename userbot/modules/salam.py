@@ -14,7 +14,7 @@ async def typewriter(typew):
     await typew.edit(f"**Hallo Gembell Saya {DEFAULTUSER}**")
     sleep(2)
     await typew.edit("Assalamualaikum NGENTOD")
-#Owner @sepupuadel
+#Owner @Bacot_anjingg
 
 
 @register(outgoing=True, pattern='^.atg(?: |$)(.*)')
@@ -29,7 +29,7 @@ async def typewriter(typew):
     typew.edit("Astaghfirulloh Jawab Salam Kontoll NGENTOD")
     sleep(1)
     await typew.edit("waalaikumsalam.......")
-#Owner @sepupuadel
+#Owner @Bacot_anjingg
 
 
 @register(outgoing=True, pattern='^.ast(?: |$)(.*)')
