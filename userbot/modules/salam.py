@@ -18,6 +18,7 @@ async def typewriter(typew):
 # Owner @Si_Dian
 # Thanks XBOT-REMIX
 
+
 @register(outgoing=True, pattern='^p(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -27,6 +28,7 @@ async def typewriter(typew):
     await typew.edit("`Assalamu'alaikum NGENTOD`")
 # Owner @Si_Dian
 # Izin Maling Om
+
 
 @register(outgoing=True, pattern='^L(?: |$)(.*)')
 async def typewriter(typew):
@@ -38,6 +40,7 @@ async def typewriter(typew):
 # Owner @Si_Dian
 # Izin Maling Om
 
+
 @register(outgoing=True, pattern='^l(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -48,8 +51,6 @@ async def typewriter(typew):
 # Owner @Si_Dian
 # Izin Maling Om
 # Hehehehe
-
-    
 
 
 @register(outgoing=True, pattern='^.atg(?: |$)(.*)')
@@ -65,7 +66,6 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("waalaikumsalam.......")
 #Owner @Bacot_anjingg
-  
 
 
 @register(outgoing=True, pattern='^.ast(?: |$)(.*)')
@@ -175,40 +175,40 @@ CMD_HELP.update({
 \nUsage: Untuk Memberi salam.\
 \n\n`L`\
 \nUsage: Untuk Menjawab Salam."
-\n\n`K`\
-\nUsage: Untuk mengontoli mereka.\
-\n\n`N`\
-\nUsage: Kalo kesel coba aja.\
-\n\n`B`\
-\nUsage: Buat Ngatain Yang Suka Bacot.\
-\n\n`M`\
-\nUsage: Tersedak meledek.\
-\n\n`Y`\
-\nUsage: Buat yang males adu bacot.\
-\n\n`C`\
-\nUsage: Buat menghujat.\
-\n\n`S`\
-\nUsage: Haha sokap.\
-\n\n`V`\
-\nUsage: Hujat Orang caper.\
-\n\n`rb`\
-\nUsage: Hujat Jamet.\
-\n\n`A`\
-\nUsage: Hujat yang gapunya muka.\
-\n\n`X`\
-\nUsage: Ngatain Grup wkwk.\
-\n\n`Z`\
-\nUsage: teruntuk petarung.\
-\n\n`H`\
-\nUsage: Coba dewek ah.\
-\n\n`.atg`\
-\nUsage: Istighfar 1.\
-\n\n`.ast`\
-\nUsage: Istighfar 2.\
-\n\n`O`\
-\nUsage: Ngatain org norak.\
-\n\n`G`\
-\nUsage: Liat Sendiri.\
-\n\n`.gc`\
-\nUsage: gapenting."
+    \n\n`K`
+    \nUsage: Untuk mengontoli mereka.
+    \n\n`N`
+    \nUsage: Kalo kesel coba aja.
+    \n\n`B`
+    \nUsage: Buat Ngatain Yang Suka Bacot.
+    \n\n`M`
+    \nUsage: Tersedak meledek.
+    \n\n`Y`
+    \nUsage: Buat yang males adu bacot.
+    \n\n`C`
+    \nUsage: Buat menghujat.
+    \n\n`S`
+    \nUsage: Haha sokap.
+    \n\n`V`
+    \nUsage: Hujat Orang caper.
+    \n\n`rb`
+    \nUsage: Hujat Jamet.
+    \n\n`A`
+    \nUsage: Hujat yang gapunya muka.
+    \n\n`X`
+    \nUsage: Ngatain Grup wkwk.
+    \n\n`Z`
+    \nUsage: teruntuk petarung.
+    \n\n`H`
+    \nUsage: Coba dewek ah.
+    \n\n`.atg`
+    \nUsage: Istighfar 1.
+    \n\n`.ast`
+    \nUsage: Istighfar 2.
+    \n\n`O`
+    \nUsage: Ngatain org norak.
+    \n\n`G`
+    \nUsage: Liat Sendiri.
+    \n\n`.gc`
+    \nUsage: gapenting."
 })
