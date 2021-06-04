@@ -106,9 +106,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/vckyou/Geez-UserBot")
+    "https://github.com/yud023/REBELLIONS-UserBot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Geez-UserBot")
+    "UPSTREAM_REPO_BRANCH", "REBELLIONS-UserBot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -351,7 +351,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... ⚡Dudin Ganteng⚡ Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... ⚡REBELLIONS USERBOT⚡ Has Been Active!!```")
     return
 
 with bot:
@@ -423,12 +423,12 @@ with bot:
         dugmeler = CMD_HELP
         me = bot.get_me()
         uid = me.id
-        logo = "https://telegra.ph/file/03cc82e4ac5c3aa5f9e97.jpg"
+        logo = "https://telegra.ph/file/05a88b62843dca6b0532c.jpg"
 
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("⚡Dudin 𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡, Buat Userbot Mu Sendiri [Tekan Disini](https://adudon01/Dudin-UserBot)")
+                await event.reply("⚡REBELLIONS-UserBot⚡, Buat Userbot Mu Sendiri [Tekan Disini](https://yud023/REBELLIONS-UserBot)")
             else:
                 await event.reply(f"`Hai {DEFAULTUSER}\n\nApa Kabarmu ? 😊`")
 
@@ -444,7 +444,7 @@ with bot:
                     text="{}"
                     f"\n\n**Bᴏᴛ ᴏꜰ {DEFAULTUSER}**\n\n"
                     "◎› **Pʟᴜɢɪɴꜱ :** `{}`\n◎› **Mᴇɴᴜ ᴏꜰ ʙᴏᴛ ↯** \n".format(
-                        "** ╡⚡Dudin-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡╞ **",
+                        "** ╡⚡REBELLIONS-UserBot⚡╞ **",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -452,22 +452,22 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ╡⚡Dudin-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡╞ ",
+                    "Bantuan Dari ╡⚡REBELLIONS-UserBot⚡╞ ",
                     text="Daftar Modul",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ╡⚡Dudin-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡╞ ",
-                    text="""**Anda Bisa Membuat ⚡Dudin-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Anda Sendiri Dengan Cara :** __Tekan Dibawah Ini__ 👇""",
+                    " ╡⚡REBELLIONS-UserBot⚡╞ ",
+                    text="""**Anda Bisa Membuat ⚡REBELLIONS-UserBot⚡ Anda Sendiri Dengan Cara :** __Tekan Dibawah Ini__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⚡Dudin",
-                                "https://github.com/adudon01/Dudin-UserBot"),
+                                "⚡REBELLIONS",
+                                "https://github.com/yud023/REBELLIONS-UserBot"),
                             custom.Button.url(
-                                "✨𝗢𝘄𝗻𝗲𝗿",
-                                "t.me/Adudin21")]],
+                                "✨REBELLIONS",
+                                "t.me/sepupuadel")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
