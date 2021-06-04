@@ -1,3 +1,4 @@
+from time import sleep
 from platform import uname
 from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
@@ -11,10 +12,44 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**Hallo Gembell Saya {DEFAULTUSER}**")
+    await typew.edit(f"**Hallo Semua Saya {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("Assalamualaikum.....")
-#Owner @Bacot_anjingg
+    await typew.edit("`Assalamu'alaikum NGENTOD`")
+# Owner @Si_Dian
+# Thanks XBOT-REMIX
+
+@register(outgoing=True, pattern='^p(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**Hallo Semua Saya {DEFAULTUSER}**")
+    sleep(2)
+    await typew.edit("`Assalamu'alaikum NGENTOD`")
+# Owner @Si_Dian
+# Izin Maling Om
+
+@register(outgoing=True, pattern='^L(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**{DEFAULTUSER} mengucapkan**")
+    sleep(1)
+    await typew.edit("`Wa'alaikumssalam NGENTOD`")
+# Owner @Si_Dian
+# Izin Maling Om
+
+@register(outgoing=True, pattern='^l(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**{DEFAULTUSER} mengucapkan**")
+    sleep(1)
+    await typew.edit("`Wa'alaikumssalam NGENTOD`")
+# Owner @Si_Dian
+# Izin Maling Om
+# Hehehehe
+
+    
 
 
 @register(outgoing=True, pattern='^.atg(?: |$)(.*)')
@@ -30,6 +65,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("waalaikumsalam.......")
 #Owner @Bacot_anjingg
+  
 
 
 @register(outgoing=True, pattern='^.ast(?: |$)(.*)')
@@ -89,7 +125,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^rb(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**WEAK 87 REBELLIONS LEWAT NIH NYET!!!**")
+    await typew.edit("**WEAK 87 REBELLIONS NUMPANG LEWAT NIH NYET!!!**")
 
 
 @register(outgoing=True, pattern='^A(?: |$)(.*)')
@@ -138,7 +174,7 @@ CMD_HELP.update({
     "`P`\
 \nUsage: Untuk Memberi salam.\
 \n\n`L`\
-\nUsage: Untuk Menjawab Salam.\
+\nUsage: Untuk Menjawab Salam."
 \n\n`K`\
 \nUsage: Untuk mengontoli mereka.\
 \n\n`N`\
