@@ -174,41 +174,41 @@ CMD_HELP.update({
     "`P`\
 \nUsage: Untuk Memberi salam.\
 \n\n`L`\
-\nUsage: Untuk Menjawab Salam."
-    \n\n`K`
-    \nUsage: Untuk mengontoli mereka.
-    \n\n`N`
-    \nUsage: Kalo kesel coba aja.
-    \n\n`B`
-    \nUsage: Buat Ngatain Yang Suka Bacot.
-    \n\n`M`
-    \nUsage: Tersedak meledek.
-    \n\n`Y`
-    \nUsage: Buat yang males adu bacot.
-    \n\n`C`
-    \nUsage: Buat menghujat.
-    \n\n`S`
-    \nUsage: Haha sokap.
-    \n\n`V`
-    \nUsage: Hujat Orang caper.
-    \n\n`rb`
-    \nUsage: Hujat Jamet.
-    \n\n`A`
-    \nUsage: Hujat yang gapunya muka.
-    \n\n`X`
-    \nUsage: Ngatain Grup wkwk.
-    \n\n`Z`
-    \nUsage: teruntuk petarung.
-    \n\n`H`
-    \nUsage: Coba dewek ah.
-    \n\n`.atg`
-    \nUsage: Istighfar 1.
-    \n\n`.ast`
-    \nUsage: Istighfar 2.
-    \n\n`O`
-    \nUsage: Ngatain org norak.
-    \n\n`G`
-    \nUsage: Liat Sendiri.
-    \n\n`.gc`
-    \nUsage: gapenting."
+\nUsage: Untuk Menjawab Salam.\
+\n\n`K`\
+\nUsage: Untuk mengontoli mereka.\
+\n\n`N`\
+\nUsage: Kalo kesel coba aja.\
+\n\n`B`\
+\nUsage: Buat Ngatain Yang Suka Bacot.\
+\n\n`M`\
+\nUsage: Tersedak meledek.\
+\n\n`Y`\
+\nUsage: Buat yang males adu bacot.\
+\n\n`C`\
+\nUsage: Buat menghujat.\
+\n\n`S`\
+\nUsage: Haha sokap.\
+\n\n`V`\
+\nUsage: Hujat Orang caper.\
+\n\n`rb`\
+\nUsage: Hujat Jamet.\
+\n\n`A`\
+\nUsage: Hujat yang gapunya muka.\
+\n\n`X`\
+\nUsage: Ngatain Grup wkwk.\
+\n\n`Z`\
+\nUsage: teruntuk petarung.\
+\n\n`H`\
+\nUsage: Coba dewek ah.\
+\n\n`.atg`\
+\nUsage: Istighfar 1.\
+\n\n`.ast`\
+\nUsage: Istighfar 2.\
+\n\n`O`\
+\nUsage: Ngatain org norak.\
+\n\n`G`\
+\nUsage: Liat Sendiri.\
+\n\n`.gc`\
+\nUsage: gapenting."
 })
