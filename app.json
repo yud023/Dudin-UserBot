@@ -1,6 +1,6 @@
 {
-  "name": "⚡Dudin-UserBot⚡",
-  "description": "🚫Dudin-UserBot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "⚡REBELLIONS-UserBot⚡",
+  "description": "🚫REBELLIONS-UserBot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Dudin-UserBot",
-  "telegram": "https://t.me/Adudin21",
-  "success_url": "https://t.me/geezsuport",
+  "repository": "https://github.com/REBELLIONS-UserBot",
+  "telegram": "https://t.me/yud023",
+  "success_url": "https://t.me/sokinlurr",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -164,7 +164,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "unknown",
+      "value": "REBELLIONS",
       "required": false
     },
     "ALIVE_NAME": {
