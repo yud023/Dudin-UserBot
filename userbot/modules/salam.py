@@ -16,8 +16,6 @@ async def typewriter(typew):
     await typew.edit("Assalamualaikum.....")
 #Owner @Bacot_anjingg
 
-    
-
 
 @register(outgoing=True, pattern='^.atg(?: |$)(.*)')
 async def typewriter(typew):
@@ -32,7 +30,6 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("waalaikumsalam.......")
 #Owner @Bacot_anjingg
-  
 
 
 @register(outgoing=True, pattern='^.ast(?: |$)(.*)')
