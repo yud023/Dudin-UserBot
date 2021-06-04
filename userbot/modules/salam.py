@@ -14,7 +14,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**Hallo Semua Saya {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("`Assalamu'alaikum NGENTOD`")
+    await typew.edit("`Assalamu'alaikum YATIM PIATU`")
 # Owner @Si_Dian
 # Thanks XBOT-REMIX
 
