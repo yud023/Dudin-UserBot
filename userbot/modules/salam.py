@@ -13,8 +13,10 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit(f"**Hallo Gembell Saya {DEFAULTUSER}**")
     sleep(2)
-    await typew.edit("Assalamualaikum NGENTOD")
+    await typew.edit("Assalamualaikum.....")
 #Owner @Bacot_anjingg
+
+    
 
 
 @register(outgoing=True, pattern='^.atg(?: |$)(.*)')
@@ -26,10 +28,11 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^L(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    typew.edit("Astaghfirulloh Jawab Salam Kontoll NGENTOD")
+    typew.edit("Astaghfirulloh Jawab Salam Kontoll...")
     sleep(1)
     await typew.edit("waalaikumsalam.......")
 #Owner @Bacot_anjingg
+  
 
 
 @register(outgoing=True, pattern='^.ast(?: |$)(.*)')
