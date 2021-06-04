@@ -175,7 +175,7 @@ CMD_HELP.update({
 \nUsage: Untuk Memberi salam.\
 \n\n`L`\
 \nUsage: Untuk Menjawab Salam."
-    \n\n`K`
+    \n\n`K\`
     \nUsage: Untuk mengontoli mereka.
     \n\n`N`
     \nUsage: Kalo kesel coba aja.
