@@ -91,14 +91,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`Geez-ProjectBot Berhasil Di Deploy!\n" "Restarting, Mohon Tunggu Sebentar.....`")
+            await event.edit("`REBELLIONS-UserBot Berhasil Di Deploy!\n" "Restarting, Mohon Tunggu Sebentar.....`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`Geez-Project Berhasil Di Update`")
+                "`REBELLIONS-Userbot Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -194,7 +194,7 @@ async def upstream(event):
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**Pembaruan Untuk ⚡REBELLIOND-UserBot⚡ :\n\n💻 Pembaruan Data :**\n`{changelog}`'
+        changelog_str = f'**Pembaruan Untuk ⚡REBELLIONS-UserBot⚡ :\n\n💻 Pembaruan Data :**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -208,7 +208,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡Geez-Project⚡.__')
+        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡REBELLIONS-UserBot⚡.__')
 
     if force_update:
         await event.edit(
