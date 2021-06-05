@@ -164,6 +164,18 @@ async def typewriter(typew):
     await typew.edit("**GAK KEREN LOE BEGITU GEMBEL, KELUARGA LU BAWA SINI GUA LUDAHIN SATU-SATU.Cuihhhhh!!!**")
 
 
+@register(outgoing=True, pattern='^.bsl(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**BAU SAWI LO..!!**")
+
+
+@register(outgoing=True, pattern='^.hai(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**Hai, Anak yatim!!**")
+
+
 @register(outgoing=True, pattern='^.gc(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -177,6 +189,10 @@ CMD_HELP.update({
 \nUsage: Untuk Menjawab Salam.\
 \n\n`K`\
 \nUsage: Untuk mengontoli mereka.\
+\n\n.bsl\
+\nUsage:\
+\n\n.hai\
+\nUsage:\
 \n\n`N`\
 \nUsage: Kalo kesel coba aja.\
 \n\n`B`\
