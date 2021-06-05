@@ -3,7 +3,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^.agoy(?: |$)(.*)')
+@register(outgoing=True, pattern='^.adudin(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -88,7 +88,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi2":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.agoy`\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.adudin`\
     \n↳ : Biasalah Agoy hikss\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.punten` dan `.pantau`\
     \n↳ : Coba aja hehehe.\
