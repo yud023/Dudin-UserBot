@@ -167,13 +167,13 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.bsl(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**BAU SAWI LO..!!**")
+    await typew.edit("**BAU LAMBUNG LO!!**")
 
 
 @register(outgoing=True, pattern='^.hai(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**Hai, Anak yatim!!**")
+    await typew.edit("**HAI YATIM PIATU!!**")
 
 
 @register(outgoing=True, pattern='^.gc(?: |$)(.*)')
