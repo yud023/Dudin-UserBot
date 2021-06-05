@@ -984,8 +984,8 @@ async def slap(replied_user, event):
 @register(outgoing=True, pattern=r"^\.rama(?: |$)(.*)")
 async def boobs(e):
     await e.edit("`Berdosa, Mendapatkan Gambar Boobs...`")
-    await sleep(3)
-    await e.edit("`hanya bokep dipikiran ku...`")
+    await sleep(5)
+    await e.edit("`hanya bokep dipikiran Rama`")
     nsfw = requests.get(
         'http://api.oboobs.ru/noise/1').json()[0]["Gambar Boobs"]
     urllib.request.urlretrieve(
@@ -996,9 +996,9 @@ async def boobs(e):
     await e.delete()
 
 
-@register(outgoing=True, pattern=r"^\.adel(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.din(?: |$)(.*)")
 async def butts(e):
-    await e.edit("`Berdosa, Mendapatkan Gambar Pantat Yang Indah...`")
+    await e.edit("`Berdosa, Mendapatkan Command Yang Bagus`")
     await sleep(3)
     await e.edit("`Gjm, Gak Jangan Maksa...`")
     nsfw = requests.get(
