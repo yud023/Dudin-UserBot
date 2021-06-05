@@ -34,12 +34,12 @@ async def koc(e):
         await e.edit("SAYANG KAMU💞")
 
 
-@register(outgoing=True, pattern='^.din(?: |$)(.*)')
+@register(outgoing=True, pattern='^.goy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`DIN DINNN.....`")
+    await typew.edit("`GOY AGOY.....`")
     sleep(1)
-    await typew.edit("`Adudinnnnn....!!`")
+    await typew.edit("`Agoyyyyy....!!`")
     sleep(1)
     await typew.edit("`🏃                        🦖`")
     await typew.edit("`🏃                       🦖`")
@@ -413,7 +413,7 @@ async def _(event):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Hai Anak Kontol 🙈, Jangan Lupa Makan Yaa`")
+    await typew.edit("`Hai Anak HARAM 🙈, Jangan Lupa Makan Yaa`")
     sleep(1)
     await typew.edit("`Jangan Bilang Lu Ga Dikasih Makan Sama Ortu 😁`")
     sleep(1)
