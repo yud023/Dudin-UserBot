@@ -1,8 +1,7 @@
 from time import sleep
-from userbot import CMD_HELP, bot
+from userbot import CMD_HELP
 from userbot.events import register
-from telethon import events
-import asyncio
+
 
 @register(outgoing=True, pattern='^.hi(?: |$)(.*)')
 async def typewriter(typew):
@@ -15,8 +14,8 @@ async def typewriter(typew):
     await typew.edit("Ih ga mau🤢")
     sleep(1)
     await typew.edit("__GELAYY__🤮")
-    
-   
+
+
 @register(outgoing=True, pattern='^.kntl(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -25,7 +24,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("se**KONT0L** **K0NTOL** nya si **K0NTOL**")
     sleep(1)
-    await typew.edit("lebih **KONTOL** lagi")              
+    await typew.edit("lebih **KONTOL** lagi")
     sleep(1)
     await typew.edit("kalian")
     await typew.edit("kalian **K**")
@@ -50,8 +49,8 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("pantes **NORAK**")
 
-    
-@register(outgoing=True, pattern='^.jawa(?: |$)(.*)') 
+
+@register(outgoing=True, pattern='^.jawa(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -88,7 +87,8 @@ async def typewriter(typew):
     await typew.edit("Bersama Kuli Membangun Negri")
     sleep(1)
     await typew.edit("eh salah salah, \nBersama **Jawa** Membangun Negri")
-    
+
+
 @register(outgoing=True, pattern='^.erpe(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -110,8 +110,8 @@ async def typewriter(typew):
     await typew.edit("Canda **BURIK**")
     sleep(1)
     await typew.edit("Lari Ada Plastik KePanasan")
-    
-    
+
+
 @register(outgoing=True, pattern='^.lopu(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -133,7 +133,8 @@ async def typewriter(typew):
     await typew.edit("`Aku Sayang Kamu`")
     sleep(1)
     await typew.edit("`I LOVE YOU 💞`")
-    
+
+
 @register(outgoing=True, pattern='^.hujan(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -191,7 +192,8 @@ async def typewriter(typew):
     await typew.edit("`Kenapa Ya Gw Coli Tadi😔`")
     sleep(2)
     await typew.edit("`Dah la besok besok ga mau lagi`")
-    
+
+
 @register(outgoing=True, pattern='^.ange(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -200,6 +202,7 @@ async def typewriter(typew):
     await typew.edit("`Ange😫`")
     sleep(1)
     await typew.edit("`Ayukkk Ewean Ayanggg🤤`")
+
 
 @register(outgoing=True, pattern='^.engas(?: |$)(.*)')
 async def typewriter(typew):
@@ -217,19 +220,19 @@ async def typewriter(typew):
     await typew.edit("Jangan di nanti - nanti")
     sleep(1)
     await typew.edit("Ayo kita happy")
-    sleep (1)
+    sleep(1)
     await typew.edit("Tapi pake pengaman")
-    
-    
+
+
 @register(outgoing=True, pattern='^.dahlah(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**`Ayo Menyerah`**")
     sleep(2)
     await typew.edit("**`Ngapain Semangat`**")
-                     
-    
-@register(outgoing=True, pattern='^.repobot(?: |$)(.*)')  
+
+
+@register(outgoing=True, pattern='^.repobot(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -237,7 +240,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("**🔥REBELLIONS-UserBot🔥**\n\n [𝚂𝚎𝚗𝚝𝚞𝚑 𝙰𝚔𝚞 𝙱𝚎𝚋](https://github.com/yud023/REBELLIONS-UserBot)\n ")
 
-   
+
 @register(outgoing=True, pattern='^.ehm(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -248,7 +251,7 @@ async def typewriter(typew):
     await typew.edit("Kayanya kalau call pribadi lebih jelas")
     sleep(2)
     await typew.edit("Gamau nyoba?")
-    
+
 CMD_HELP.update({
     "animasi6":
     "•   **Syntax**: .hai\
@@ -273,6 +276,6 @@ CMD_HELP.update({
     \n•**Function**: Jawa Pride Ni Bos.\
     \n\n   •**Syntax**: .erpe\
     \n•**Function**: Buat Nyindir Nak Rp Yg Goblok."
-    
-    
+
+
 })
