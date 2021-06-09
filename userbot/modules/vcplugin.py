@@ -4,7 +4,6 @@ from userbot.events import register
 from userbot import CMD_HELP
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
-import asyncio
 
 
 async def get_call(event):
@@ -15,10 +14,11 @@ async def get_call(event):
 
 def user_list(l, n):
     for i in range(0, len(l), n):
-        yield l[i : i + n]
+        yield l[i: i + n]
 
 
-@register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)",disable_errors=True, groups_only=True)
+@register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)",
+          disable_errors=True, groups_only=True)
 async def _(event):
     await event.edit("`Inviting Members to Voice Chat...`")
     users = []
@@ -36,12 +36,9 @@ async def _(event):
     await event.edit(f"`Invited {z} users`")
 
 
-        
-        
 CMD_HELP.update(
     {
         "vcplugin": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcjoin : .vcstop : .vcplay : .vcinvite : .fgame <jumlah text>`"
         "\n• : Fake typing ini Berfungsi dalam group"
     }
 )
-        
