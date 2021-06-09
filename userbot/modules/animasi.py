@@ -3,7 +3,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^.goy(?: |$)(.*)')
+@register(outgoing=True, pattern='^goy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -16,7 +16,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.punten(?: |$)(.*)')
+@register(outgoing=True, pattern='^punten(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`\n┻┳|―-∩`"
@@ -31,7 +31,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.pantau(?: |$)(.*)')
+@register(outgoing=True, pattern='^pantau(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`\n┻┳|―-∩`"
@@ -47,7 +47,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.idiot(?: |$)(.*)')
+@register(outgoing=True, pattern='^idiot(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("\n╭╮╱╱╭╮"
@@ -88,11 +88,11 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi2":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.goy`\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `goy`\
     \n↳ : Biasalah Agoy hikss\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.punten` dan `.pantau`\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `punten` dan `pantau`\
     \n↳ : Coba aja hehehe.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.idiot`\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `idiot`\
     \n↳ : u're ediot xixixi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `kosong`\
     \n↳ : Tunggu update selanjutnya kawan."
