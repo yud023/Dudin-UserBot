@@ -5,7 +5,6 @@ from userbot import CMD_HELP
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
 
-
 async def get_call(event):
     mm = await event.client(getchat(event.chat_id))
     xx = await event.client(getvc(mm.full_chat.call))
