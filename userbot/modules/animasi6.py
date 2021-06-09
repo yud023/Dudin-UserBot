@@ -36,7 +36,6 @@ async def typewriter(typew):
     await typew.edit("kalian **Kontol**")
 
 
-
 @register(outgoing=True, pattern='^alay(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
