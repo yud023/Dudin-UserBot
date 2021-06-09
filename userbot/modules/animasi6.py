@@ -3,7 +3,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^.hi(?: |$)(.*)')
+@register(outgoing=True, pattern='^hi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -11,12 +11,13 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("aku kangen")
     sleep(1)
-    await typew.edit("Ih ga mau🤢")
+    await typew.edit("Ih ga mau")
     sleep(1)
-    await typew.edit("__GELAYY__🤮")
+    await typew.edit("Gasuka")
+    await typew.edit("Mantan")
 
 
-@register(outgoing=True, pattern='^.kntl(?: |$)(.*)')
+@register(outgoing=True, pattern='^kntl(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -35,7 +36,8 @@ async def typewriter(typew):
     await typew.edit("kalian **Kontol**")
 
 
-@register(outgoing=True, pattern='^.alay(?: |$)(.*)')
+
+@register(outgoing=True, pattern='^alay(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -50,27 +52,27 @@ async def typewriter(typew):
     await typew.edit("pantes **NORAK**")
 
 
-@register(outgoing=True, pattern='^.jawa(?: |$)(.*)')
+@register(outgoing=True, pattern='^jawa(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("baik")
+    await typew.edit("kuli")
     sleep(1)
-    await typew.edit("Tidak Sombong")
+    await typew.edit("Tumbal Proyek")
     sleep(1)
-    await typew.edit("Ganteng")
+    await typew.edit("Dekil")
     sleep(1)
-    await typew.edit("Sopan")
+    await typew.edit("Item")
     sleep(1)
-    await typew.edit("Rajin")
+    await typew.edit("Otot Keluar Semua")
     sleep(1)
-    await typew.edit("Budiman")
+    await typew.edit("Tangan Ber'urat")
     sleep(1)
-    await typew.edit("Alim")
+    await typew.edit("jelek")
     sleep(1)
     await typew.edit("Berguna")
     sleep(1)
-    await typew.edit("**Nguli Juga**")
+    await typew.edit("**Nguli mulu**")
     sleep(1)
     await typew.edit("Pemaaf")
     sleep(1)
@@ -78,9 +80,9 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("Tidk Sombong")
     sleep(1)
-    await typew.edit("Kaya")
+    await typew.edit("Miskin")
     sleep(1)
-    await typew.edit("Pokoknya Jawa Pro Dah")
+    await typew.edit("Pokoknya Jawa Nguli Dah")
     sleep(1)
     await typew.edit("Tidak Seperti Yang Lain")
     sleep(1)
@@ -89,11 +91,11 @@ async def typewriter(typew):
     await typew.edit("eh salah salah, \nBersama **Jawa** Membangun Negri")
 
 
-@register(outgoing=True, pattern='^.erpe(?: |$)(.*)')
+@register(outgoing=True, pattern='^erpe(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("Hai, Kamu Anak Erpe Ya")
+    await typew.edit("Hai, Anak Erpe Ya")
     sleep(1)
     await typew.edit("Kok Pake Muka Orang sih?")
     sleep(1)
@@ -112,7 +114,7 @@ async def typewriter(typew):
     await typew.edit("Lari Ada Plastik KePanasan")
 
 
-@register(outgoing=True, pattern='^.lopu(?: |$)(.*)')
+@register(outgoing=True, pattern='^lopu(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -135,7 +137,7 @@ async def typewriter(typew):
     await typew.edit("`I LOVE YOU 💞`")
 
 
-@register(outgoing=True, pattern='^.hujan(?: |$)(.*)')
+@register(outgoing=True, pattern='^hujan(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`H`")
@@ -147,7 +149,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("`Hujan Hujan Gini Ange😔`")
     sleep(2)
-    await typew.edit("`Enaknya Coli🤤`")
+    await typew.edit("`Enaknya bacol🤤`")
     sleep(1)
     await typew.edit("`8✊===D`")
     await typew.edit("`8=✊==D`")
@@ -178,9 +180,9 @@ async def typewriter(typew):
     await typew.edit("`8==✊=D`")
     await typew.edit("`8=✊==D`")
     await typew.edit("`8✊===D`")
-    await typew.edit("`crotss💦`")
-    await typew.edit("`crotss💦💦`")
-    await typew.edit("`crotss💦💦💦🤤`")
+    await typew.edit("`crots💦`")
+    await typew.edit("`crots💦💦`")
+    await typew.edit("`crots💦💦💦`")
     sleep(2)
     await typew.edit("`H`")
     await typew.edit("`Hm`")
@@ -194,17 +196,17 @@ async def typewriter(typew):
     await typew.edit("`Dah la besok besok ga mau lagi`")
 
 
-@register(outgoing=True, pattern='^.ange(?: |$)(.*)')
+@register(outgoing=True, pattern='^ange(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Ayanggggg😖`")
     sleep(1)
     await typew.edit("`Ange😫`")
     sleep(1)
-    await typew.edit("`Ayukkk Ewean Ayanggg🤤`")
+    await typew.edit("`Ayukkk Ngewee Ayanggg🤤`")
 
 
-@register(outgoing=True, pattern='^.engas(?: |$)(.*)')
+@register(outgoing=True, pattern='^engas(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Udah nggak kuat nahan")
@@ -224,7 +226,7 @@ async def typewriter(typew):
     await typew.edit("Tapi pake pengaman")
 
 
-@register(outgoing=True, pattern='^.dahlah(?: |$)(.*)')
+@register(outgoing=True, pattern='^dahlah(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**`Ayo Menyerah`**")
@@ -232,7 +234,7 @@ async def typewriter(typew):
     await typew.edit("**`Ngapain Semangat`**")
 
 
-@register(outgoing=True, pattern='^.repobot(?: |$)(.*)')
+@register(outgoing=True, pattern='^repobot(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -241,7 +243,7 @@ async def typewriter(typew):
     await typew.edit("**🔥REBELLIONS-UserBot🔥**\n\n [𝚂𝚎𝚗𝚝𝚞𝚑 𝙰𝚔𝚞 𝙱𝚎𝚋](https://github.com/yud023/REBELLIONS-UserBot)\n ")
 
 
-@register(outgoing=True, pattern='^.ehm(?: |$)(.*)')
+@register(outgoing=True, pattern='^ehm(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Eh..")
@@ -254,27 +256,27 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi6":
-    "•   **Syntax**: .hai\
+    "•   **Syntax**: hai\
     \n•**Function**: Cosplay Nissa Sablon\
-    \n\n   •**Syntax**: .kntl\
+    \n\n   •**Syntax**: kntl\
     \n•**Function**: Cek Aja dh\
-    \n\n   •**Syntax**: .alay\
+    \n\n   •**Syntax**: alay\
     \n•**Function**: Lumayanlah Buat Nyindir\
-    \n\n   •**Syntax**: .ange\
+    \n\n   •**Syntax**: ange\
     \n•**Function**: Ketik Ini Kalo Lu Lagi Sange\
-    \n\n   •**Syntax**: .engas\
+    \n\n   •**Syntax**: engas\
     \n•**Function**: Sange berat\
-    \n\n   •**Syntax**: .ehm\
+    \n\n   •**Syntax**: ehm\
     \n•**Function**: Eum Biasalah cewe mau nya call mulu\
-    \n\n   •**Syntax**: .lopu\
+    \n\n   •**Syntax**: lopu\
     \n•**Function**: Nyatakan Cinta Ke Cewe Orng\
-    \n\n   •**Syntax**: .hujan\
+    \n\n   •**Syntax**: hujan\
     \n•**Function**: Penyesalan Seorang Laki-laki Yang Diulangin Terus Menerus\
-    \n\n   •**Syntax**: .dahlah\
+    \n\n   •**Syntax**: dahlah\
     \n•**Function**: Cek Aja dh sndri\
-    \n\n   •**Syntax**: .jawa\
+    \n\n   •**Syntax**: jawa\
     \n•**Function**: Jawa Pride Ni Bos.\
-    \n\n   •**Syntax**: .erpe\
+    \n\n   •**Syntax**: erpe\
     \n•**Function**: Buat Nyindir Nak Rp Yg Goblok."
 
 
