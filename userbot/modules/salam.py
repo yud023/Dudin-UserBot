@@ -64,7 +64,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     typew.edit("Astaghfirulloh Jawab Salam Kontoll...")
     sleep(1)
-    await typew.edit("waalaikumsalam.......")
+    await typew.edit("waalaikumsalam NGENTOD")
 #Owner @Bacot_anjingg
 
 
@@ -77,61 +77,61 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^K(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**KONTOL SOK KERAS LOE GEMBEL**")
+    await typew.edit("**KONTOL SOK KERAS LOE BABU**")
 
 
 @register(outgoing=True, pattern='^N(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**NAMANYA JUGA GEMBEL CAPER SANA SINI BUAT CARI NAMA**")
+    await typew.edit("**NAMANYA JUGA BABU CAPER SANA SINI BUAT CARI NAMA**")
 
 
 @register(outgoing=True, pattern='^B(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**BACOT DAH LU, GEMBEL!!!!**")
+    await typew.edit("**BACOT DAH LU, BABU!!!!**")
 
 
 @register(outgoing=True, pattern='^M(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**MATI AJA LU GEMBEL, GAGUNA LU HIDUP DI BUMI**")
+    await typew.edit("**MATI AJA LU BABU, GAGUNA LU HIDUP DI DUNIA**")
 
 
 @register(outgoing=True, pattern='^Y(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**YAUDAH KALO GITU**")
+    await typew.edit("**YAUDAH IYAAAA NGENTOD**")
 
 
 @register(outgoing=True, pattern='^C(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**CUIHHHH, MAKAN AJA MASIH NGEMIS LOE GEMBEL, JANGAN SOK NINGGI YA KONTOL!!**")
+    await typew.edit("**CUIHHHH, MAKAN AJA MASIH NGAMEN LOE BABU, JANGAN SOK NINGGI YA TOLOL!!**")
 
 
 @register(outgoing=True, pattern='^S(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**SOKAP BET LU GEMBEL, KAGA ADA ISTILAH NYA GEMBEL TEMENAN AMA BOS!!**")
+    await typew.edit("**SOKAP BET LU BABU, KAGA ADA ISTILAH NYA BABU TEMENAN AMA BOS!!**")
 
 
 @register(outgoing=True, pattern='^V(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**MACAM BAGUS AE LU BEGITU GEMBEL, AJAK BAPAK LU SINI RIBUT SAMA GUA!!**")
+    await typew.edit("**MACAM BAGUS AE LU BEGITU BABU, AJAK KELUARGA LU SINI RIBUT SAMA GUA!!**")
 
 
 @register(outgoing=True, pattern='^rb(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**WEAK 87 REBELLIONS NUMPANG LEWAT NIH NYET!!!**")
+    await typew.edit("**WEAK 87 REBELLIONS NUMPANG LEWAT NIH NGENTOD!!!**")
 
 
 @register(outgoing=True, pattern='^A(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**ANAK HARAM BELAGU BET DAH,LAHIR DARI RAHIM GEMBEL JADI JANGAN SO SO NINGGI KATA KATA LOE😆**")
+    await typew.edit("**ANAK HARAM BELAGU BET DAH,LAHIR DARI RAHIM BABU JADI JANGAN SO SO NINGGI KATA KATA LOE TOLOL**")
 
 
 @register(outgoing=True, pattern='^X(?: |$)(.*)')
@@ -143,7 +143,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^Z(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**WAR WAR PALAK BAPAK KAU WAR, SOK KERAS BANGET GEMBEL, DI TONGKRONGAN JADI BABU, DI TELE SOK JAGOAN...**")
+    await typew.edit("**WAR WAR PALAK BAPAK KAU WAR, SOK KERAS BANGET BABU, DI TONGKRONGAN JADI BABU, DI TELE SOK JAGOAN...**")
 
 
 @register(outgoing=True, pattern='^H(?: |$)(.*)')
@@ -155,28 +155,28 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^O(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**JANGAN MAEN BOT MULU, ALAY LU GEMBEL,KESANNYA NORAK, CUIHHHH!!!**")
+    await typew.edit("**JANGAN MAEN BOT MULU, ALAY LU TOLOL,KESANNYA NORAK, CUIHHHH!!!**")
 
 
 @register(outgoing=True, pattern='^G(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**GAK KEREN LOE BEGITU GEMBEL, KELUARGA LU BAWA SINI GUA LUDAHIN SATU-SATU.Cuihhhhh!!!**")
+    await typew.edit("**GAK KEREN LOE BEGITU TOLOL, KELUARGA LU BAWA SINI GUA LUDAHIN SATU-SATU.CUIHHHH!!!**")
 
 
-@register(outgoing=True, pattern='^.bsl(?: |$)(.*)')
+@register(outgoing=True, pattern='^bsl(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**BAU LAMBUNG LO!!**")
 
 
-@register(outgoing=True, pattern='^.hai(?: |$)(.*)')
+@register(outgoing=True, pattern='^hai(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**HAI YATIM PIATU!!**")
 
 
-@register(outgoing=True, pattern='^.gc(?: |$)(.*)')
+@register(outgoing=True, pattern='^gc(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("GC OWNER= [TEKAN](https://t.me/sepupuadel)")
@@ -189,9 +189,9 @@ CMD_HELP.update({
 \nUsage: Untuk Menjawab Salam.\
 \n\n`K`\
 \nUsage: Untuk mengontoli mereka.\
-\n\n.bsl\
+\n\n`bsl`\
 \nUsage:\
-\n\n.hai\
+\n\n`hai`\
 \nUsage:\
 \n\n`N`\
 \nUsage: Kalo kesel coba aja.\
@@ -225,6 +225,6 @@ CMD_HELP.update({
 \nUsage: Ngatain org norak.\
 \n\n`G`\
 \nUsage: Liat Sendiri.\
-\n\n`.gc`\
+\n\n`gc`\
 \nUsage: gapenting."
 })
