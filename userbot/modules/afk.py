@@ -62,15 +62,15 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"🔥𝙋𝙀𝙎𝘼𝙉 𝙊𝙏𝙊𝙈𝘼𝙏𝙄𝙎\n╭╼═══╾╼═══╾╼═══╾╼═══╾ \n┣ {ALIVE_NAME} ᴀꜰᴋ ᴅᴜʟᴜ\n┣ ᴀʟᴀꜱᴀɴ : {AFKREASON}\n╰╼═══╾╼═══╾╼═══╾")
+        await afk_e.edit(f"GUA CABUT DULU YE NGENTOD\n╭╼═══╾╼═══╾╼═══╾╼═══╾ \n┣ {ALIVE_NAME} ᴀꜰᴋ ᴅᴜʟᴜ\n┣ ᴀʟᴀꜱᴀɴ : {AFKREASON}\n╰╼═══╾╼═══╾╼═══╾")
     else:
-        await afk_e.edit("🔥 𝘼 𝙁 𝙆\n╭╼═══╾╼═══╾╼═══╾ \n┣ ᴊᴀɴɢᴀɴ ᴅɪᴄᴀʀɪ ✨\n╰╼═══╾╼═══╾")
+        await afk_e.edit("🔥 𝘼 𝙁 𝙆\n╭╼═══╾╼═══╾╼═══╾ \n┣ JANGAN KANGEN YE NGENTOD ✨\n╰╼═══╾╼═══╾")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     else:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\n**ʟᴀɢɪ ᴀꜰᴋ ɢᴜʏꜱ**")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\n**LAGI NGEWE GOBLOK**")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
@@ -105,7 +105,7 @@ async def type_afk_is_not_true(notafk):
             await notafk.client.send_message(
                 BOTLOG_CHATID,
                 "Anda Mendapatkan " + str(COUNT_MSG) + " Pesan Dari " +
-                str(len(USERS)) + " Obrolan Saat Anda AFK",
+                str(len(USERS)) + " OBROLAN SAAT BOS LAGI AFK",
             )
             for i in USERS:
                 name = await notafk.client.get_entity(i)
