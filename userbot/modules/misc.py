@@ -1,3 +1,11 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
+#
+# Licensed under the Raphielscape Public License, Version 1.d (the "License");
+# you may not use this file except in compliance with the License.
+#
+# You can find misc modules, which dont fit in anything xD
+""" Userbot module for other small commands. """
+
 from random import randint
 from time import sleep
 from os import execl
@@ -6,7 +14,7 @@ import sys
 import os
 import io
 import sys
-from userbot import ALIVE_NAME, UPSTREAM_REPO_URL, BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
+from userbot import ALIVE_NAME, BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.events import register
 from userbot.utils import time_formatter
 import urllib
@@ -18,8 +26,6 @@ from PIL import Image
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/yud023/REBELLIONS-UserBot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -59,23 +65,23 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan REBELLIONS-UserBot....`")
+    await event.edit("`Menonaktifkan REBELLIONS-UserBot`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`Userbot Telah Dimatikan`")
+                                        "`REBELLIONS-UserBot Telah Dinonaktifkan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting REBELLIONS-Userbot...`")
+    await event.edit("`Restarting REBELLIONS-UserBot`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`Userbot Telah Di Restart`")
+                                        "`REBELLIONS-UserBot Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -86,9 +92,13 @@ async def killdabot(event):
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     await e.edit(
-        "Here's Something for You to Read :\n"
-        "\n[⚡ REBELLIONS-Project Repo](https://github.com/yud023/REBELLIONS-UserBot/blob/REBELLIONS-UserBot/README.md)"
+        "Here's something for you to read:\n"
+        "\n[REBELLIONS-UserBot Repo](https://github.com/yud023/REBELLIONS-UserBot/blob/REBELLIONS-UserBot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
+        "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
+        "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
+        "\n[Video Tutorial - 576p](https://mega.nz/#!ErwCESbJ!1ZvYAKdTEfb6y1FnqqiLhHH9vZg4UB2QZNYL9fbQ9vs)"
+        "\n[Video Tutorial - 1080p](https://mega.nz/#!x3JVhYwR!u7Uj0nvD8_CyyARrdKrFqlZEBFTnSVEiqts36HBMr-o)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
 
@@ -110,13 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "╭‒─‒──────────‒─‒╮\n"
-        "│                   ʀᴇᴘᴏ\n"
-        "│ [⚡REBELLIONS-UserBot⚡](https://github.com/yud023/REBELLIONS-UserBot)\n"
-        "├‒─‒──────────‒─‒╯\n"
-        "│🔰 **ᴏᴡɴᴇʀ :** [PEMILIK](t.me/sepupuadel)\n"
-        "╰‒─‒──────────‒─‒╯\n"
-        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/yud023/REBELLIONS-UserBot/blob/REBELLIONS-UserBot/LICENSE)"
+        "**╭✠╼━━━━━━❖━━━━━━━✠╮** \n┣•REPO         : [✨REBELLIONS-UserBot✨](https://github.com/yud023/REBELLIONS-UserBot)\n┣•PEMILIK    : [YUDA](t.me/sepupuadel)\n┣•CHANNEL : [𝐈𝐍𝐅𝐎](t.me/menepionly)\n┣•GROUP      : [𝐆𝐑𝐎𝐔𝐏](t.me/ootspambot) \n**╰✠╼━━━━━━❖━━━━━━━✠╯**"
     )
 
 
@@ -155,7 +159,7 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await bot.download_media(message, photo)
     else:
-        await img.edit("`Harap Reply Di Gambar...`")
+        await img.edit("`Harap Balas Di Gambar Lord`")
         return
 
     if photo:
@@ -264,27 +268,27 @@ async def scam(results, lim):
 
 CMD_HELP.update({
     "random":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.random <item1> <item2> ... <itemN>`\
-    \n↳ : Get a random item from the list of items.",
+    ">`.random <item1> <item2> ... <itemN>`\
+    \nUsage: Get a random item from the list of items.",
     "sleep":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`\
-    \n↳ : Let yours snooze for a few seconds.",
+    ">`.sleep <seconds>`\
+    \nUsage: Let yours snooze for a few seconds.",
     "shutdown":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`\
-    \n↳ : Shutdown bot",
+    ">`.shutdown`\
+    \nUsage: Shutdown bot",
     "repo":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repo`\
-    \n↳ : Github Repo of this bot",
+    ">`.repo`\
+    \nUsage: Github Repo of this bot",
     "readme":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.readme`\
-    \n↳ : Provide links to setup the userbot and it's modules.",
+    ">`.readme`\
+    \nUsage: Provide links to setup the userbot and it's modules.",
     "repeat":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat <no> <text>`\
-    \n↳ : Repeats the text for a number of times. Don't confuse this with spam tho.",
+    ">`.repeat <no> <text>`\
+    \nUsage: Repeats the text for a number of times. Don't confuse this with spam tho.",
     "restart":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.restart`\
-    \n↳ : Restarts the bot !!",
+    ">`.restart`\
+    \nUsage: Restarts the bot !!",
     "raw":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.raw`\
-    \n↳ : Get detailed JSON-like formatted data about replied message."
+    ">`.raw`\
+    \nUsage: Get detailed JSON-like formatted data about replied message."
 })
