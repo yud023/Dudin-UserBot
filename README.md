@@ -53,6 +53,8 @@
 
  🙏 **THANK YOU VERY MUCH FOR**
 
+*   [RamUtod](https://github.com/ramadhani892/RAM-UBOT)
+*   [vckyou](https://github.com/vckyou/Geez-UserBot) - Geez-UserBot
 *   [X_iMFiNe](https://github.com/ximfine/xBot-Remix) - xBot-Remix
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot) - Kampang-Bot
 *   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
