@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/vckyou/Geez-UserBot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/yud023/REBELLIONS-UserBot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -59,7 +59,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan REBELLIONS-Userbot....`")
+    await event.edit("`Mematikan REBELLIONS-UserBot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -114,7 +114,7 @@ async def repo_is_here(wannasee):
         "│                   ʀᴇᴘᴏ\n"
         "│ [⚡REBELLIONS-UserBot⚡](https://github.com/yud023/REBELLIONS-UserBot)\n"
         "├‒─‒──────────‒─‒╯\n"
-        "│🔰 **ᴏᴡɴᴇʀ :** [REBELLIONS](t.me/sepupuadel)\n"
+        "│🔰 **ᴏᴡɴᴇʀ :** [PEMILIK](t.me/sepupuadel)\n"
         "╰‒─‒──────────‒─‒╯\n"
         "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/yud023/REBELLIONS-UserBot/blob/REBELLIONS-UserBot/LICENSE)"
     )
