@@ -1,362 +1,272 @@
-# Ported By @VckyouuBitch From Geez-Projects
-# Fixes bugs kemaren ngestuck kaya hidup piki
+""" Userbot module which contains afk-related commands """
 
+from datetime import datetime
+import time
+from random import choice, randint
 
-import os
-from time import sleep
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from urllib.parse import quote_plus
-from asyncio import sleep
-from userbot import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN
+from telethon.events import StopPropagation
+from telethon.tl.functions.account import UpdateProfileRequest
+
+from userbot import (  # noqa pylint: disable=unused-import isort:skip
+    AFKREASON,
+    BOTLOG,
+    BOTLOG_CHATID,
+    CMD_HELP,
+    ALIVE_NAME,
+    COUNT_MSG,
+    ISAFK,
+    PM_AUTO_BAN,
+    USERS,
+    PM_AUTO_BAN,
+    bot,
+)
 from userbot.events import register
 
-
-CARBONLANG = "auto"
-TTS_LANG = "en"
-TRT_LANG = "en"
-TEMP_DOWNLOAD_DIRECTORY = "/root/userbot/.bin"
-
-
-@register(outgoing=True, pattern="^.crblang (.*)")
-async def setlang(prog):
-    global CARBONLANG
-    CARBONLANG = prog.pattern_match.group(1)
-    await prog.edit(f"Language for carbon.now.sh set to {CARBONLANG}")
+# ========================= CONSTANTS ============================
+AFKSTR = [
+    f"**Maaf Kawan {ALIVE_NAME} Sedang NGEBABU!**",
+    f"**Maaf Kawan {ALIVE_NAME} Sedang NGEBABU\n Tunggu Sampai Dia Kembali KAYA!**",
+    f"**SIBABU {ALIVE_NAME} Sedang NGEBABU\n Tunggulah Sampai KAYA**",
+    f"**Maaf Kawan {ALIVE_NAME} Sedang NGEBABU!**",
+]
 
 
-@register(outgoing=True, pattern="^.carbon1")
-async def carbon_api(e):
-    """ A Wrapper for carbon.now.sh """
-    await e.edit("`Memulai Proses..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(249%2C237%2C212%2C0)&t=synthwave-84&wt=none&l=application%2Fjson&ds=true&dsyoff=20px&dsblur=0px&wc=true&wa=true&pv=56px&ph=0px&ln=false&fl=1&fm=IBM%20Plex%20Mono&fs=14.5px&lh=153%25&si=false&es=4x&wm=false&code={code}'
-    global CARBONLANG
-    textx = await e.get_reply_message()
-    pcode = e.text
-    if pcode[8:]:
-        pcode = str(pcode[8:])
-    elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
-    await e.edit("`Proses di..\n25%`")
-    if os.path.isfile("/root/userbot/.bin/carbon.png"):
-        os.remove("/root/userbot/.bin/carbon.png")
-    url = CARBON.format(code=code, lang=CARBONLANG)
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.binary_location = GOOGLE_CHROME_BIN
-    chrome_options.add_argument("--window-size=1920x1080")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-gpu")
-    prefs = {'download.default_directory': '/root/userbot/.bin'}
-    chrome_options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(executable_path=CHROME_DRIVER,
-                              options=chrome_options)
-    driver.get(url)
-    await e.edit("`Proses di..\n50%`")
-    download_path = '/root/userbot/.bin'
-    driver.command_executor._commands["send_command"] = (
-        "POST", '/session/$sessionId/chromium/send_command')
-    params = {
-        'cmd': 'Page.setDownloadBehavior',
-        'params': {
-            'behavior': 'allow',
-            'downloadPath': download_path
-        }
-    }
-    driver.execute("send_command", params)
-    driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-    await e.edit("`Processing..\n75%`")
-    # Waiting for downloading
-    while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
-    await e.edit("`sudah sampai..\n100%`")
-    file = '/root/userbot/.bin/carbon.png'
-    await e.edit("`Mengirim..`")
-    await e.client.send_file(
-        e.chat_id,
-        file,
-        caption="Created by [YUDA](https://t.me/sepupuadel)\
-        \nGroup [SPAM BOT](https://t.me/ootspambot/)",
-        force_document=True,
-        reply_to=e.message.reply_to_msg_id,
-    )
+global USER_AFK  # pylint:disable=E0602
+global afk_time  # pylint:disable=E0602
+global afk_start
+global afk_end
+USER_AFK = {}
+afk_time = None
+afk_start = {}
 
-    os.remove('/root/userbot/.bin/carbon.png')
-    driver.quit()
-    # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+# =================================================================
 
 
-@register(outgoing=True, pattern="^.carbon2")
-async def carbon_api(e):
-    """ A Wrapper for carbon.now.sh """
-    await e.edit("`Memulai Proses..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(239%2C40%2C44%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}'
-    global CARBONLANG
-    textx = await e.get_reply_message()
-    pcode = e.text
-    if pcode[8:]:
-        pcode = str(pcode[8:])
-    elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
-    await e.edit("`Proses di..\n25%`")
-    if os.path.isfile("/root/userbot/.bin/carbon.png"):
-        os.remove("/root/userbot/.bin/carbon.png")
-    url = CARBON.format(code=code, lang=CARBONLANG)
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.binary_location = GOOGLE_CHROME_BIN
-    chrome_options.add_argument("--window-size=1920x1080")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-gpu")
-    prefs = {'download.default_directory': '/root/userbot/.bin'}
-    chrome_options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(executable_path=CHROME_DRIVER,
-                              options=chrome_options)
-    driver.get(url)
-    await e.edit("`Proses di..\n50%`")
-    download_path = '/root/userbot/.bin'
-    driver.command_executor._commands["send_command"] = (
-        "POST", '/session/$sessionId/chromium/send_command')
-    params = {
-        'cmd': 'Page.setDownloadBehavior',
-        'params': {
-            'behavior': 'allow',
-            'downloadPath': download_path
-        }
-    }
-    driver.execute("send_command", params)
-    driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-    await e.edit("`Proses di..\n75%`")
-    # Waiting for downloading
-    while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
-    await e.edit("`Sudah sampai..\n100%`")
-    file = '/root/userbot/.bin/carbon.png'
-    await e.edit("`Mengirim..`")
-    await e.client.send_file(
-        e.chat_id,
-        file,
-        caption="created by [YUDA](https://t.me/sepupuadel)\
-        \nGroup Support [Dawn Labs](https://t.me/ootspambot/)",
-        force_document=True,
-        reply_to=e.message.reply_to_msg_id,
-    )
-
-    os.remove('/root/userbot/.bin/carbon.png')
-    driver.quit()
-    # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+@register(outgoing=True, pattern="^.afk(?: |$)(.*)", disable_errors=True)
+async def set_afk(afk_e):
+    """ For .afk command, allows you to inform people that you are afk when they message you """
+    message = afk_e.text  # pylint:disable=E0602
+    string = afk_e.pattern_match.group(1)
+    global ISAFK
+    global AFKREASON
+    global USER_AFK  # pylint:disable=E0602
+    global afk_time  # pylint:disable=E0602
+    global afk_start
+    global afk_end
+    user = await bot.get_me()  # pylint:disable=E0602
+    global reason
+    USER_AFK = {}
+    afk_time = None
+    afk_end = {}
+    start_1 = datetime.now()
+    afk_start = start_1.replace(microsecond=0)
+    if string:
+        AFKREASON = string
+        await afk_e.edit(f"**😡 BACOT TOLOL!**\n**GUA LAGI BUCIN**\
+        \n😊 **Gara Gara:** `{string}`")
+    else:
+        await afk_e.edit("**😡 BACOT TOLOL!**\n**GUA LAGI SLIPKOL**")
+    if user.last_name:
+        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + "【REBELLIONS】"))
+    else:
+        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name="【REBELLIONS】"))
+    if BOTLOG:
+        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\n**GUA LAGI VCS!**")
+    ISAFK = True
+    afk_time = datetime.now()  # pylint:disable=E0602
+    raise StopPropagation
 
 
-@register(outgoing=True, pattern="^.carbon3")
-async def carbon_api(e):
-    """ A Wrapper for carbon.now.sh """
-    await e.edit("`Memulai Proses..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(74%2C144%2C226%2C1)&t=material&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code={code}'
-    global CARBONLANG
-    textx = await e.get_reply_message()
-    pcode = e.text
-    if pcode[8:]:
-        pcode = str(pcode[8:])
-    elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
-    await e.edit("`Proses di..\n25%`")
-    if os.path.isfile("/root/userbot/.bin/carbon.png"):
-        os.remove("/root/userbot/.bin/carbon.png")
-    url = CARBON.format(code=code, lang=CARBONLANG)
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.binary_location = GOOGLE_CHROME_BIN
-    chrome_options.add_argument("--window-size=1920x1080")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-gpu")
-    prefs = {'download.default_directory': '/root/userbot/.bin'}
-    chrome_options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(executable_path=CHROME_DRIVER,
-                              options=chrome_options)
-    driver.get(url)
-    await e.edit("`Proses di..\n50%`")
-    download_path = '/root/userbot/.bin'
-    driver.command_executor._commands["send_command"] = (
-        "POST", '/session/$sessionId/chromium/send_command')
-    params = {
-        'cmd': 'Page.setDownloadBehavior',
-        'params': {
-            'behavior': 'allow',
-            'downloadPath': download_path
-        }
-    }
-    driver.execute("send_command", params)
-    driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-    await e.edit("`Processing..\n75%`")
-    # Waiting for downloading
-    while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
-    await e.edit("`Sudah Sampai..\n100%`")
-    file = '/root/userbot/.bin/carbon.png'
-    await e.edit("`Mengirim..`")
-    await e.client.send_file(
-        e.chat_id,
-        file,
-        caption="Created By [YUDA](https://t.me/sepupuadel)\
-        \nGroup Support [Spam](https://t.me/ootspambot/)",
-        force_document=True,
-        reply_to=e.message.reply_to_msg_id,
-    )
-
-    os.remove('/root/userbot/.bin/carbon.png')
-    driver.quit()
-    # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+@register(outgoing=True)
+async def type_afk_is_not_true(notafk):
+    """ This sets your status as not afk automatically when you write something while being afk """
+    global ISAFK
+    global COUNT_MSG
+    global USERS
+    global AFKREASON
+    global USER_AFK  # pylint:disable=E0602
+    global afk_time  # pylint:disable=E0602
+    global afk_start
+    global afk_end
+    user = await bot.get_me()  # pylint:disable=E0602
+    last = user.last_name
+    if last and last.endswith("【REBELLIONS】"):
+        last1 = last[:-12]
+    else:
+        last1 = ""
+    back_alive = datetime.now()
+    afk_end = back_alive.replace(microsecond=0)
+    if ISAFK:
+        ISAFK = False
+        msg = await notafk.respond("**GUA UDAH ENAK!**")
+        time.sleep(3)
+        await msg.delete()
+        await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
+        if BOTLOG:
+            await notafk.client.send_message(
+                BOTLOG_CHATID,
+                "Anda Mendapatkan " + str(COUNT_MSG) + " Pesan Dari " +
+                str(len(USERS)) + " Obrolan Saat Anda AFK",
+            )
+            for i in USERS:
+                name = await notafk.client.get_entity(i)
+                name0 = str(name.first_name)
+                await notafk.client.send_message(
+                    BOTLOG_CHATID,
+                    "[" + name0 + "](tg://user?id=" + str(i) + ")" +
+                    " Mengirim Mu " + "`" + str(USERS[i]) + " Pesan`",
+                )
+        COUNT_MSG = 0
+        USERS = {}
+        AFKREASON = None
 
 
-@register(outgoing=True, pattern="^.carbon4")
-async def carbon_api(e):
-    """ A Wrapper for carbon.now.sh """
-    await e.edit("`Memulai Proses..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(29%2C40%2C104%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}'
-    global CARBONLANG
-    textx = await e.get_reply_message()
-    pcode = e.text
-    if pcode[8:]:
-        pcode = str(pcode[8:])
-    elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
-    await e.edit("`Proses di..\n25%`")
-    if os.path.isfile("/root/userbot/.bin/carbon.png"):
-        os.remove("/root/userbot/.bin/carbon.png")
-    url = CARBON.format(code=code, lang=CARBONLANG)
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.binary_location = GOOGLE_CHROME_BIN
-    chrome_options.add_argument("--window-size=1920x1080")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-gpu")
-    prefs = {'download.default_directory': '/root/userbot/.bin'}
-    chrome_options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(executable_path=CHROME_DRIVER,
-                              options=chrome_options)
-    driver.get(url)
-    await e.edit("`Proses di..\n50%`")
-    download_path = '/root/userbot/.bin'
-    driver.command_executor._commands["send_command"] = (
-        "POST", '/session/$sessionId/chromium/send_command')
-    params = {
-        'cmd': 'Page.setDownloadBehavior',
-        'params': {
-            'behavior': 'allow',
-            'downloadPath': download_path
-        }
-    }
-    driver.execute("send_command", params)
-    driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-    await e.edit("`Proses di..\n75%`")
-    # Waiting for downloading
-    while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
-    await e.edit("`Sudah Sampai..\n100%`")
-    file = '/root/userbot/.bin/carbon.png'
-    await e.edit("`Mengirim..`")
-    await e.client.send_file(
-        e.chat_id,
-        file,
-        caption="Created by [YUDA](https://t.me/sepupuadel),\
-        \nGroup Support [Group Spam](https://t.me/ootspambot)",
-        force_document=True,
-        reply_to=e.message.reply_to_msg_id,
-    )
+@register(incoming=True, disable_edited=True)
+async def mention_afk(mention):
+    """ This function takes care of notifying the people who mention you that you are AFK."""
+    global COUNT_MSG
+    global USERS
+    global ISAFK
+    global USER_AFK  # pylint:disable=E0602
+    global afk_time  # pylint:disable=E0602
+    global afk_start
+    global afk_end
+    user = await bot.get_me()  # pylint:disable=E0602
+    back_alivee = datetime.now()
+    afk_end = back_alivee.replace(microsecond=0)
+    afk_since = "**Terakhir Aktif**"
+    if mention.message.mentioned and not (await mention.get_sender()).bot:
+        if ISAFK:
+            now = datetime.now()
+            datime_since_afk = now - afk_time  # pylint:disable=E0602
+            time = float(datime_since_afk.seconds)
+            days = time // (24 * 3600)
+            time = time % (24 * 3600)
+            hours = time // 3600
+            time %= 3600
+            minutes = time // 60
+            time %= 60
+            seconds = time
+            if days == 1:
+                afk_since = "**Kemarin**"
+            elif days > 1:
+                if days > 6:
+                    date = now + \
+                        datetime.timedelta(
+                            days=-days, hours=-hours, minutes=-minutes)
+                    afk_since = date.strftime("%A, %Y %B %m, %H:%I")
+                else:
+                    wday = now + datetime.timedelta(days=-days)
+                    afk_since = wday.strftime('%A')
+            elif hours > 1:
+                afk_since = f"`{int(hours)} Jam {int(minutes)} Menit`"
+            elif minutes > 0:
+                afk_since = f"`{int(minutes)} Menit {int(seconds)} Detik`"
+            else:
+                afk_since = f"`{int(seconds)} Detik`"
+            if mention.sender_id not in USERS:
+                if AFKREASON:
+                    await mention.reply(f"**😡 SI {ALIVE_NAME} Lagi NGEBABU** {afk_since} **Yang Lalu.**\
+                        \n😊 **Gara Gara:** `{AFKREASON}`")
+                else:
+                    await mention.reply(str(choice(AFKSTR)))
+                USERS.update({mention.sender_id: 1})
+                COUNT_MSG = COUNT_MSG + 1
+            elif mention.sender_id in USERS:
+                if USERS[mention.sender_id] % randint(2, 4) == 0:
+                    if AFKREASON:
+                        await mention.reply(f"**😡 GUA MASIH NGEBABU BANGSAT** {afk_since} **Yang Lalu.**\
+                            \n😊 **Gara Gara:** `{AFKREASON}`")
+                    else:
+                        await mention.reply(str(choice(AFKSTR)))
+                    USERS[mention.sender_id] = USERS[mention.sender_id] + 1
+                    COUNT_MSG = COUNT_MSG + 1
+                else:
+                    USERS[mention.sender_id] = USERS[mention.sender_id] + 1
+                    COUNT_MSG = COUNT_MSG + 1
 
-    os.remove('/root/userbot/.bin/carbon.png')
-    driver.quit()
-    # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
 
-
-@register(outgoing=True, pattern="^.carbon")
-async def carbon_api(e):
-    """ A Wrapper for carbon.now.sh """
-    await e.edit("`memulai proses..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(76%2C144%2C140%2C1)&t=night-owl&wt=none&l=coffeescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=133%25&si=false&es=2x&wm=false&code={code}'
-    global CARBONLANG
-    textx = await e.get_reply_message()
-    pcode = e.text
-    if pcode[8:]:
-        pcode = str(pcode[8:])
-    elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
-    await e.edit("`Proses di..\n25%`")
-    if os.path.isfile("/root/userbot/.bin/carbon.png"):
-        os.remove("/root/userbot/.bin/carbon.png")
-    url = CARBON.format(code=code, lang=CARBONLANG)
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.binary_location = GOOGLE_CHROME_BIN
-    chrome_options.add_argument("--window-size=1920x1080")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-gpu")
-    prefs = {'download.default_directory': '/root/userbot/.bin'}
-    chrome_options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(executable_path=CHROME_DRIVER,
-                              options=chrome_options)
-    driver.get(url)
-    await e.edit("`Proses di..\n50%`")
-    download_path = '/root/userbot/.bin'
-    driver.command_executor._commands["send_command"] = (
-        "POST", '/session/$sessionId/chromium/send_command')
-    params = {
-        'cmd': 'Page.setDownloadBehavior',
-        'params': {
-            'behavior': 'allow',
-            'downloadPath': download_path
-        }
-    }
-    driver.execute("send_command", params)
-    driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
-   # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-    await e.edit("`Proses di..\n75%`")
-    # Waiting for downloading
-    while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
-    await e.edit("`Sudah Sampai..\n100%`")
-    file = '/root/userbot/.bin/carbon.png'
-    await e.edit("`Mengirim..`")
-    await e.client.send_file(
-        e.chat_id,
-        file,
-        caption="Created by [YUDA](https://t.me/sepupuadel),\
-        \nGroup Support [Spam](https://t.me/ootspambot/)",
-        force_document=True,
-        reply_to=e.message.reply_to_msg_id,
-    )
-
-    os.remove('/root/userbot/.bin/carbon.png')
-    driver.quit()
-    # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+@register(incoming=True, disable_errors=True)
+async def afk_on_pm(sender):
+    """ Function which informs people that you are AFK in PM """
+    global ISAFK
+    global USERS
+    global COUNT_MSG
+    global COUNT_MSG
+    global USERS
+    global ISAFK
+    global USER_AFK  # pylint:disable=E0602
+    global afk_time  # pylint:disable=E0602
+    global afk_start
+    global afk_end
+    user = await bot.get_me()  # pylint:disable=E0602
+    back_alivee = datetime.now()
+    afk_end = back_alivee.replace(microsecond=0)
+    afk_since = "**Belum Lama**"
+    if sender.is_private and sender.sender_id != 777000 and not (
+            await sender.get_sender()).bot:
+        if PM_AUTO_BAN:
+            try:
+                from userbot.modules.sql_helper.pm_permit_sql import is_approved
+                apprv = is_approved(sender.sender_id)
+            except AttributeError:
+                apprv = True
+        else:
+            apprv = True
+        if apprv and ISAFK:
+            now = datetime.now()
+            datime_since_afk = now - afk_time  # pylint:disable=E0602
+            time = float(datime_since_afk.seconds)
+            days = time // (24 * 3600)
+            time = time % (24 * 3600)
+            hours = time // 3600
+            time %= 3600
+            minutes = time // 60
+            time %= 60
+            seconds = time
+            if days == 1:
+                afk_since = "**Kemarin**"
+            elif days > 1:
+                if days > 6:
+                    date = now + \
+                        datetime.timedelta(
+                            days=-days, hours=-hours, minutes=-minutes)
+                    afk_since = date.strftime("%A, %Y %B %m, %H:%I")
+                else:
+                    wday = now + datetime.timedelta(days=-days)
+                    afk_since = wday.strftime('%A')
+            elif hours > 1:
+                afk_since = f"`{int(hours)} Jam {int(minutes)} Menit`"
+            elif minutes > 0:
+                afk_since = f"`{int(minutes)} Menit {int(seconds)} Detik`"
+            else:
+                afk_since = f"`{int(seconds)} Detik`"
+            if sender.sender_id not in USERS:
+                if AFKREASON:
+                    await sender.reply(f"😡 **Gua Lagi NGEBABU** {afk_since} **Yang Lalu**.\
+                        \n😊 **Gara Gara**: `{AFKREASON}`")
+                else:
+                    await sender.reply(str(choice(AFKSTR)))
+                USERS.update({sender.sender_id: 1})
+                COUNT_MSG = COUNT_MSG + 1
+            elif apprv and sender.sender_id in USERS:
+                if USERS[sender.sender_id] % randint(2, 4) == 0:
+                    if AFKREASON:
+                        await sender.reply(f"😡 **Gua Lagi Ngemis** {afk_since} **Yang Lalu.**\
+                            \n😊 **Gara Gara**: `{AFKREASON}`")
+                    else:
+                        await sender.reply(str(choice(AFKSTR)))
+                    USERS[sender.sender_id] = USERS[sender.sender_id] + 1
+                    COUNT_MSG = COUNT_MSG + 1
+                else:
+                    USERS[sender.sender_id] = USERS[sender.sender_id] + 1
+                    COUNT_MSG = COUNT_MSG + 1
 
 
 CMD_HELP.update({
-    "carbon":
-    "`.carbon`value <values=1,2,3,4>\
-        \nUsage:reply or type .carbon1 or 2,3,4 value and beautify your text."
+    ".afk":
+    "`.afk` [Alasan]\
+\nUsage: Lakukan ketika ingin OFF.\nSiapapun Yang Balas, Tag, Atau Chat Kamu \
+Mereka Akan Tau Alasan Kamu OFF.\n\nAFK Bisa Dilakukan Dan Dibatalkan Dimanapun.\
+"
 })
