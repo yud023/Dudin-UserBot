@@ -59,7 +59,7 @@ async def _(event):
             "🌗",
             "Gjm, Gak Jangan Maksa... :)",
             "YUD",
-            "🌒", 
+            "🌒",
             "YUD",
             "Gjm, Gak Jangan Maksa... :)"]
 
