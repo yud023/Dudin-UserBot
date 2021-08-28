@@ -239,7 +239,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("👻")
     sleep(2)
-    await typew.edit("**🔥REBELLIONS-UserBot🔥**\n\n [𝚂𝚎𝚗𝚝𝚞𝚑 𝙰𝚔𝚞 𝙱𝚎𝚋](https://github.com/yud023/REBELLIONS-UserBot)\n ")
+    await typew.edit("**🔥Yud-UserBot🔥**\n\n [𝚂𝚎𝚗𝚝𝚞𝚑 𝙰𝚔𝚞 𝙱𝚎𝚋](https://github.com/yud023/Yud-UserBot)\n ")
 
 
 @register(outgoing=True, pattern='^ehm(?: |$)(.*)')
