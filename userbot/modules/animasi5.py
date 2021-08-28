@@ -53,7 +53,7 @@ async def _(event):
             "YUD",
             "🌒",
             "MAX",
-            "MILKUAT", 
+            "MILKUAT",
             "ARDI",
             "🌖",
             "🌗",
