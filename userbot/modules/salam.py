@@ -179,7 +179,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^gc(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("GC OWNER= [TEKAN](https://t.me/sepupuadel)")
+    await typew.edit("GC OWNER= [TEKAN](https://t.me/lawakgblg)")
 
 CMD_HELP.update({
     "salam":
