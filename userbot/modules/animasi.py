@@ -3,15 +3,15 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^goy(?: |$)(.*)')
+@register(outgoing=True, pattern='^yud(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
-    await typew.edit("`Pertama-tama Gua Agoy`")
+    await typew.edit("`Pertama-tama Gua Yud`")
     sleep(2)
     await typew.edit("`Kedua Gua Ganteng`")
     sleep(1)
-    await typew.edit("`Dan Maaf Ada Lilin Yang Harus Di Jaga`")
+    await typew.edit("`Dan Maaf Ada Hati Yang Harus Di Jaga`")
 
 # Create by myself @localheart
 
@@ -88,7 +88,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi2":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `goy`\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `yud`\
     \n↳ : Biasalah Agoy hikss\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `punten` dan `pantau`\
     \n↳ : Coba aja hehehe.\
