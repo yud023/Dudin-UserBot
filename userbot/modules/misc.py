@@ -70,18 +70,18 @@ async def killdabot(event):
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`REBELLIONS-UserBot Telah Dinonaktifkan`")
+                                        "`Yud-UserBot Telah Dinonaktifkan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting REBELLIONS-UserBot`")
+    await event.edit("`Restarting Yud-UserBot`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`REBELLIONS-UserBot Telah Di Restart`")
+                                        "`Yud-UserBot Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's something for you to read:\n"
-        "\n[REBELLIONS-UserBot Repo](https://github.com/yud023/REBELLIONS-UserBot/blob/REBELLIONS-UserBot/README.md)"
+        "\n[Yud-UserBot Repo](https://github.com/yud023/Yud-UserBot/blob/Yud-UserBot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**╭✠╼━━━━━━❖━━━━━━━✠╮** \n┣•REPO         : [✨REBELLIONS-UserBot✨](https://github.com/yud023/REBELLIONS-UserBot)\n┣•PEMILIK    : [YUDA](t.me/sepupuadel)\n┣•CHANNEL : [𝐈𝐍𝐅𝐎](t.me/menepionly)\n┣•GROUP      : [𝐆𝐑𝐎𝐔𝐏](t.me/ootspambot) \n**╰✠╼━━━━━━❖━━━━━━━✠╯**"
+        "**╭✠╼━━━━━━❖━━━━━━━✠╮** \n┣•REPO         : [✨Yud-UserBot✨](https://github.com/yud023/Yud-UserBot)\n┣•PEMILIK    : [YUD](t.me/lawakgblg)\n┣•CHANNEL : [𝐈𝐍𝐅𝐎](t.me/sacifarqoutes)\n┣•GROUP      : [𝐆𝐑𝐎𝐔𝐏](t.me/sokinlurr) \n**╰✠╼━━━━━━❖━━━━━━━✠╯**"
     )
 
 
