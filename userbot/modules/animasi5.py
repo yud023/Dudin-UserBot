@@ -18,18 +18,18 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "gjm":
+    if input_str == "gaje":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "AGOY",
+            "YUD",
             "🌗",
             "🌘",
             "MAX",
             "🌒",
-            "PHIS",
-            "KORA-KORA",
+            "MINANG",
+            "ARDI",
             "KRISS",
             "🌖",
             "🌗",
@@ -42,25 +42,25 @@ async def _(event):
             "🌖",
             "🌗",
             "🌘",
-            "RYUGA",
+            "ALEK",
             "🌒",
             "DINDA",
             "NADINE",
             "Gjm, Gak Jangan Maksa... :)",
-            "HIPPO",
+            "ANTON",
             "🌗",
             "🌘",
             "YUD",
             "🌒",
             "MAX",
             "MILKUAT",
-            "KORA-KORA",
+            "ARDI
             "🌖",
             "🌗",
             "Gjm, Gak Jangan Maksa... :)",
             "YUD",
             "🌒",
-            "AGOY",
+            "YUD
             "Gjm, Gak Jangan Maksa... :)"]
 
         for i in animation_ttl:
@@ -309,7 +309,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi5":
-    "`.gjm` ; `.hati` ; `.bernyanyi`\
+    "`.gaje.hati` ; `.bernyanyi`\
     \nUsage: liat aja.\
     \n\n`.helikopter` ; `.tank` ; `.tembak`\n`.bundir`\
     \nUsage: liat sendiri\
