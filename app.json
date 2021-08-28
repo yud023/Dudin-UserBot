@@ -1,6 +1,6 @@
 {
-  "name": "⚡REBELLIONS-UserBot⚡",
-  "description": "🚫REBELLIONS-UserBot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "⚡Yud-UserBot⚡",
+  "description": "🚫Yud-UserBot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "",
   "keywords": [
     "telegram",
@@ -9,8 +9,8 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/REBELLIONS-UserBot",
-  "telegram": "https://t.me/yud023",
+  "repository": "https://github.com/Yud-UserBot",
+  "telegram": "https://t.me/lawakgblg",
   "success_url": "https://t.me/sokinlurr",
   "stack": "container",
   "env": {
@@ -211,7 +211,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
-      "value": "Bandung",
+      "value": "Tangerang",
       "required": false
     },
     "WOLFRAM_ID": {
