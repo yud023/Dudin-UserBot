@@ -1,24 +1,24 @@
-<p align="center"> 🚀 WEAK 87 REBELLIONS 🚀</p>
+<p align="center"> 🚀 Yud-UserBot 🚀</p>
 <p align="left">
-  <a href="https://github.com/yud023/REBELLIONS-UserBot/fork"><img src="https://img.shields.io/github/forks/yud023/REBELLIONS-UserBot?label=Fork&style=social"></a>
+  <a href="https://github.com/yud023/Yud-UserBot/fork"><img src="https://img.shields.io/github/forks/yud023/Yud-UserBot?label=Fork&style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/yud023/REBELLIONS-UserBot"><img src="https://img.shields.io/github/stars/yud023/REBELLIONS-UserBot?style=social"></a>
+  <a href="https://github.com/yud023/Yud-UserBot"><img src="https://img.shields.io/github/stars/yud023/Yud-UserBot?style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/yud023/REBELLIONS-UserBot/blob/yud023-UserBot/LICENSE"><img src="https://img.shields.io/github/license/yud023/REBELLIONS-UserBot?&style=social&logo=github">
+  <a href="https://github.com/yud023/Yud-UserBot/blob/yud023-UserBot/LICENSE"><img src="https://img.shields.io/github/license/yud023/Yud-UserBot?&style=social&logo=github">
   </a></p>
 
 ![VIEWS](https://komarev.com/ghpvc/?username=yud023)
-![Repo Size](https://img.shields.io/github/repo-size/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)
-[![GitHub issues](https://img.shields.io/github/issues/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://GitHub.com/yud023/REBELLIONS-UserBot/graphs/contributors/)
-[![PR Open](https://img.shields.io/github/issues-pr/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/pulls)
-[![PR Closed](https://img.shields.io/github/issues-pr-closed/yud023/REBELLIONS-UserBot?&style=plastic&logo=github)](https://github.com/yud023/REBELLIONS-UserBot/pulls?q=is:closed)
+![Repo Size](https://img.shields.io/github/repo-size/yud023/Yud-UserBot?&style=plastic&logo=github)
+[![GitHub issues](https://img.shields.io/github/issues/yud023/Yud-UserBot?&style=plastic&logo=github)](https://github.com/yud023/Yud-UserBot/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yud023/Yud-UserBot?&style=plastic&logo=github)](https://github.com/yud023/Yud-UserBot/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/yud023/Yud-UserBot?&style=plastic&logo=github)](https://GitHub.com/yud023/Yud-UserBot/graphs/contributors/)
+[![PR Open](https://img.shields.io/github/issues-pr/yud023/Yud-UserBot?&style=plastic&logo=github)](https://github.com/yud023/Yud-UserBot/pulls)
+[![PR Closed](https://img.shields.io/github/issues-pr-closed/yud023/Yud-UserBot?&style=plastic&logo=github)](https://github.com/yud023/Yud-UserBot/pulls?q=is:closed)
 <p align="justify">
-<a href="https://github.com/yud023/REBELLIONS-UserBot/commits/REBELLIONS-UserBot"><img src="https://img.shields.io/github/last-commit/yud023/REBELLIONS-UserBot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
-<a href="https://github.com/yud023/REBELLIONS-UserBot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/yud023/REBELLIONS-UserBot/CI/REBELLIONS-UserBot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
+<a href="https://github.com/yud023/Yud-UserBot/commits/Yud-UserBot"><img src="https://img.shields.io/github/last-commit/yud023/Yud-UserBot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
+<a href="https://github.com/yud023/Yud-UserBot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/yud023/Yud-UserBot/CI/Yud-UserBot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
 </p>
 <p align="justify">
 <a href="https://pypi.org/project/Telethon/"><img src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=brightgreen&style=for-the-badge" /></a>
@@ -26,11 +26,11 @@
 </p>
 <p align="left">
 </p>
-<a href="https://t.me/merapatsabi"><img src="https://img.shields.io/badge/Join-Group1%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/sokinlurr"><img src="https://img.shields.io/badge/Join-Group1%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/sokinlurr"><img src="https://img.shields.io/badge/Join-Group2%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
-## ⚡REBELLIONS-UserBot⚡
-![REBELLIONS-UserBot](https://telegra.ph/file/b48876a98e0d972d4ae0f.jpg)
+## ⚡Yud-UserBot⚡
+![Yud-UserBot](https://telegra.ph/file/b48876a98e0d972d4ae0f.jpg)
 
 <h3 align="center">Userbot Used for Fun on Telegram, and for Maintianing Your Group.</h3>
 <p align="center">&nbsp;</p>
@@ -44,7 +44,7 @@
 
 ## <p align="center">DEPLOY TO HEROKU</p>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/yud023/REBELLIONS-UserBot/tree/REBELLIONS-UserBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-gray?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/yud023/Yud-UserBot/tree/Yud-UserBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-gray?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 <br>
 </p>
