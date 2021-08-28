@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari ⚡REBELLIONS-UserBot⚡.`'
+                ' untuk dapat deploy perubahan terbaru dari ⚡Yud-UserBot⚡.`'
             )
             repo.__del__()
             return
@@ -208,7 +208,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡REBELLIONS-UserBot⚡.__')
+        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡Yud-UserBot⚡.__')
 
     if force_update:
         await event.edit(
