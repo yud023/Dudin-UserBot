@@ -164,8 +164,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡REBELLIONS-UserBot⚡ Versi:** \n "
-            f"heads/REBELLIONS-Userbot-0-x634i7u1"
+            "**⚜-**⚡Yud-UserBot⚡ Versi:** \n "
+            f"heads/Yud-Userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -228,9 +228,9 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"\n__**{REBELLIONS_TEKS_KUSTOM}**__\n"
+        f"\n__**{Yud_TEKS_KUSTOM}**__\n"
         f"**╭───────────────────**\n"
-        f"**├[• 🤴 REBELLIONS Owner** \n"
+        f"**├[• 🤴 Yud Owner** \n"
         f"├[•   : `{DEFAULTUSER}` \n"
         f"**├[• 🔎 Username** \n"
         f"├[•   : `@{user.username}` \n"
@@ -265,16 +265,16 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤㅤㅤ ⚡REBELLIONS - UserBot⚡**\n"
+        f"**ㅤㅤㅤㅤ ⚡Yud - UserBot⚡**\n"
         f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[REBELLIONS](t.me/sepupuadel)             ㅤ ║\n"
+        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[Yud](t.me/lawakgblg)             ㅤ ║\n"
         f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
         f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
         f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
         f"╟⟩⟩ 👾 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
         f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
         f"╚══════════╬════╬══════════╝ \n"
-        f"🔰 : [𝗥𝗘𝗣𝗢-𝙂𝙚𝙚𝙯](https://github.com/yud023/REBELLIONS-UserBot)\n👥 : [REBELLIONS-UserBot](t.me/sokinlurr)\n👤 : [Owner](t.me/sepupuadel)\n"
+        f"🔰 : [𝗥𝗘𝗣𝗢-𝙂𝙚𝙚𝙯](https://github.com/yud023/Yud-UserBot)\n👥 : [Yud-UserBot](t.me/sokinlurr)\n👤 : [Owner](t.me/lawakgblg)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -311,7 +311,7 @@ async def redis(alive):
     await asyncio.sleep(2)
     output = (
         f"╭═──────╼═⌘═╾───────═\n"
-        f"┃⚡REBELLIONS - UserBot⚡\n"
+        f"┃⚡Yud - UserBot⚡\n"
         f"╰═─────╼══⌘══╾─────═ \n"
         f" ❍ `Name     :` {DEFAULTUSER} \n"
         f" ❍ `Username :` @{user.username} \n"
@@ -321,8 +321,8 @@ async def redis(alive):
         f" ❍ `Bot Ver  :` {BOT_VER} \n"
         f" ❍ `Modules  :` {len(modules)} Modules \n"
         f"╭═───────╼⌘╾───────═ \n"
-        f"┃[𝗥𝗲𝗽𝗼](https://github.com/REBELLIONS-UserBot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/sokinlurr)  |  "
-        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](t.me/sepupuadel)\n"
+        f"┃[𝗥𝗲𝗽𝗼](https://github.com/Yud-UserBot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/sokinlurr)  |  "
+        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](t.me/lawakgblg)\n"
         f"╰═──────╼═⌘═╾───────═")
     if ALIVE_LOGO:
         try:
