@@ -6,7 +6,7 @@
   <a href="https://github.com/yud023/Yud-UserBot"><img src="https://img.shields.io/github/stars/yud023/Yud-UserBot?style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/yud023/Yud-UserBot/blob/yud023-UserBot/LICENSE"><img src="https://img.shields.io/github/license/yud023/Yud-UserBot?&style=social&logo=github">
+  <a href="https://github.com/yud023/Yud-UserBot/blob/Yud-UserBot/LICENSE"><img src="https://img.shields.io/github/license/yud023/Yud-UserBot?&style=social&logo=github">
   </a></p>
 
 ![VIEWS](https://komarev.com/ghpvc/?username=yud023)
