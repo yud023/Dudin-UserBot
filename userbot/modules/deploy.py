@@ -26,7 +26,7 @@ async def _(event):
 
     animation_chars = [
 
-        "Heroku Connecting To Latest Github Build (yud023/REBELLIONS-UserBot)",
+        "Heroku Connecting To Latest Github Build (yud023/Yud-UserBot)",
         f"Build started by user `{DEFAULTUSER}`",
         f"Deploy `535a74f0` by user `{DEFAULTUSER}`",
         "`Restarting Heroku Server...`",
