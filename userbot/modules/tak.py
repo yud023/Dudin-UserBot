@@ -1,5 +1,5 @@
 # Port By @Yud_023
-# Yud - Userbot 
+# Yud - Userbot
 
 
 from telethon.errors import ChatSendInlineForbiddenError, ChatSendStickersForbiddenError
