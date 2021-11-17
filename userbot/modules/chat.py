@@ -121,7 +121,7 @@ async def unmute_chat(unm_e):
         await unm_e.edit('`Running on Non-SQL Mode!`')
         return
     unkread(str(unm_e.chat_id))
-    await unm_e.edit("```Berhasil Dibuka, Obrolan Tidak Lagi Dibisukan```")
+    await unm_e.edit("```Berhasil Dibuka, Si Babu Tidak Lagi Dibisukan```")
     await sleep(2)
     await unm_e.delete()
 
@@ -136,13 +136,13 @@ async def mute_chat(mute_e):
         return
     await mute_e.edit(str(mute_e.chat_id))
     kread(str(mute_e.chat_id))
-    await mute_e.edit("`Ssshssh Anda Telah Membisukan Obrolan !`")
+    await mute_e.edit("`Ssshssh Anda Telah Membisukan Obrolan Si Babu !`")
     await sleep(2)
     await mute_e.delete()
     if BOTLOG:
         await mute_e.client.send_message(
             BOTLOG_CHATID,
-            str(mute_e.chat_id) + " Telah Dibisukan.")
+            str(mute_e.chat_id) + " Babu Telah Dibisukan.")
 
 
 @register(incoming=True, disable_errors=True)
